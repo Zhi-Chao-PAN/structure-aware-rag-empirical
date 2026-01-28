@@ -1,0 +1,44 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.conda/
+
+# Environment variables (NEVER upload API keys!)
+.env
+
+# Data files (only upload benchmark and sample PDFs, not large built indices)
+data/chroma_db/
+data/parsed/
+
+# Local utilities
+check_ollama.py
+
+# IDE configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# Jupyter outputs
+*.ipynb_checkpoints/

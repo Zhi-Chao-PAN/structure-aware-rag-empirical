@@ -1,0 +1,9 @@
+id,question,ground_truth,question_type
+1,"What was the Total revenue for the fiscal year ended January 28, 2024?","60,922 million","Simple Lookup"
+2,"What was the Total revenue for the fiscal year ended January 29, 2023?","26,974 million","Simple Lookup"
+3,"Compare the Research and development expenses between 2024 and 2023. Which year was higher?","2024 was higher (8,675 vs 7,339)","Cross-Column Comparison"
+4,"What is the exact value of Gross profit for 2024?","44,301 million","Simple Lookup"
+5,"Did the Operating income increase or decrease from 2023 to 2024, and by roughly how much?","Increased by roughly 28,696 million (32,972 - 4,224)","Cross-Column Comparison"
+6,"What was the Net income for 2024?","29,760 million","Simple Lookup"
+7,"What was the Basic net income per share for 2024?","$12.05","Simple Lookup"
+8,"Did the Basic net income per share increase from 2023 to 2024?","Yes, increased from $1.76 to $12.05","Cross-Column Comparison"

@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+authors:
+- family-names: "Pan"
+  given-names: "Zhichao"
+title: "Structure-Aware RAG: An Empirical Study on Financial Document Parsing"
+version: 1.0.0
+date-released: 2026-01-28
+url: "https://github.com/Zhi-Chao-PAN/structure-aware-rag-study"
+preferred-citation:
+  type: generic
+  authors:
+  - family-names: "Pan"
+    given-names: "Zhichao"
+  title: "Structure-Aware RAG: An Empirical Study on Financial Document Parsing"
+  year: 2026

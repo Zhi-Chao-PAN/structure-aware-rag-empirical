@@ -1,0 +1,16 @@
+llama-index
+llama-index-core
+llama-index-readers-file
+llama-index-llms-ollama
+llama-index-embeddings-huggingface
+llama-parse
+pandas
+matplotlib
+seaborn
+python-dotenv
+torch
+transformers
+pypdf
+pdfplumber
+nest-asyncio
+requests
