@@ -1,5 +1,7 @@
 # Technical Report: Addressing the Structure-Gap in Financial RAG Systems
 
+> 📄 **[View Academic PDF Report (HTML) →](Technical_Report_Structure_Aware_RAG.html)** — *Open in browser and print to PDF for best results*
+
 ## Abstract
 **Problem**: Financial documents (e.g., 10-Ks, earnings reports) are highly heterogeneous, heavily relying on complex tables to convey critical information. Standard RAG pipelines, which treat documents as flat text, often fail to preserve the structural relationships within these tables, leading to high hallucination rates in retrieval and generation.
 
