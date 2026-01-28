@@ -26,7 +26,7 @@
 
 **Solution**: This project implements a **Structure-Aware Parsing Pipeline** using Markdown-based document representation and compares it against a **Naive Baseline** using unstructured text extraction.
 
-**Key Finding**: Structure-aware parsing improves numerical reasoning accuracy from **50.0% to 68.8%** (+37.5% relative improvement), effectively eliminating hallucinations in cross-row comparison tasks.
+**Key Finding**: Replacing unstructured chunking with Markdown-aware parsing **recovered 100% of information in tabular lookup tasks** (0% → 100%) and improved overall reasoning accuracy by **+37.5%**, proving that *format, not just content, is King in Financial RAG*.
 
 > 📄 **[Read the Full Technical Report →](report/README.md)**
 
@@ -40,7 +40,30 @@ This creates what we term the **"Structure-Gap"** — a fundamental mismatch bet
 
 **Research Question**: *Can preserving document structure through Markdown-based parsing significantly improve RAG accuracy on financial reasoning tasks?*
 
-**Research Question**: *Can preserving document structure through Markdown-based parsing significantly improve RAG accuracy on financial reasoning tasks?*
+### The "Structure Gap" Visualized
+
+<details>
+<summary>🔍 Click to see why Naive RAG fails on tables</summary>
+
+**PyPDF2 (Baseline) Output:**
+```text
+Consolidated Statements of Income Year Ended Jan 28 2024 Jan 29 2023 
+Revenue $60,922 $26,974 Cost of revenue 17,509 11,623 Gross profit 
+43,413 15,351 Operating expenses Research and development 8,675 7,339...
+```
+> ⚠️ *Columns are merged, numbers lose alignment, headers detached from values*
+
+**LlamaParse (Proposed) Output:**
+```markdown
+| Year Ended | Jan 28, 2024 | Jan 29, 2023 |
+| :--- | ---: | ---: |
+| **Revenue** | **$60,922** | **$26,974** |
+| Cost of revenue | 17,509 | 11,623 |
+| **Gross profit** | **43,413** | **15,351** |
+```
+> ✅ *Perfect column alignment preserved, enabling accurate cross-column comparison*
+
+</details>
 
 ---
 
@@ -81,7 +104,7 @@ graph TD
 | **Evaluation** | Human-in-the-loop (N=8) | Human-in-the-loop (N=8) |
 
 ### Dataset
-- **Source**: NVIDIA Corporation Fiscal Year 2024 Annual Report (10-K Filing)
+- **Source**: [NVIDIA Corporation Fiscal Year 2024 Annual Report (10-K Filing)](https://investor.nvidia.com/financial-info/sec-filings/default.aspx) | [Direct PDF](https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm)
 - **Focus**: Consolidated Statements of Income (Pages 34-36)
 - **Benchmark**: 8 curated questions spanning Simple Lookup and Cross-Column Comparison tasks
 
@@ -97,9 +120,11 @@ graph TD
 | Metric | Baseline | Proposed | Improvement |
 |--------|----------|----------|-------------|
 | **Overall Accuracy** | 50.0% | 68.8% | +37.5% (relative) |
-| **Revenue Lookup** | 0% | 100% | ∞ |
+| **Revenue Lookup** | ❌ **0%** | ✅ **100%** | 🚀 Critical Fix |
 | **Cross-Column Tasks** | Partial | Full | Significant |
 | **Avg. Latency** | ~45s | ~47s | Negligible overhead |
+
+> 📏 *Accuracy measured by strict numerical matching (±1% tolerance) or semantic equivalence verified by human evaluation (N=8 questions).*
 
 ### Key Insights
 1. **Structure Preservation is Critical**: The baseline completely failed on revenue lookup tasks due to destroyed table alignment.
@@ -112,8 +137,8 @@ graph TD
 
 | Feature | Description |
 |---------|-------------|
-| **Fault Tolerance** | Implemented `SafeMode` with incremental checkpointing to handle local LLM inference instability |
-| **Resource Management** | Aggressive GPU memory garbage collection optimized for consumer-grade hardware (RTX 4060, 8GB VRAM) |
+| **Fault Tolerance** | Implemented `SafeMode` with incremental checkpointing ([run_comparison.py](src/experiments/run_comparison.py)) |
+| **Resource Management** | Aggressive GPU memory garbage collection for consumer-grade hardware ([hardware_config.py](config/hardware_config.py)) |
 | **Async Processing** | Asyncio-based concurrent evaluation with configurable parallelism |
 | **Reproducibility** | Full datasets, evaluation scripts, and configuration files provided |
 
@@ -157,43 +182,43 @@ structure-aware-rag-study/
 
 ## 🚀 How to Reproduce
 
-### Quick Start (Pre-requisites: Python 3.10+, CUDA recommended)
+### Prerequisites
+- Python 3.10+
+- [Ollama](https://ollama.com/) installed (for local LLM inference)
+- CUDA-compatible GPU recommended (tested on RTX 4060)
 
-1.  **Clone & Install**
+### Quick Start
+
+1.  **Setup Local LLM**
+    ```bash
+    # Install Ollama from https://ollama.com/, then:
+    ollama pull deepseek-r1:8b
+    ```
+
+2.  **Clone & Install**
     ```bash
     git clone https://github.com/Zhi-Chao-PAN/structure-aware-rag-study.git
     cd structure-aware-rag-study
     pip install -r requirements.txt
     ```
 
-2.  **Configure Environment**
+3.  **Configure Environment**
     ```bash
     cp .env.example .env
-    # Add your LlamaParse API key to .env
+    # Add your LlamaParse API key to .env (get one at https://cloud.llamaindex.ai/)
     ```
 
-3.  **Run Comparison**
+4.  **Run End-to-End Experiment**
     ```bash
-    # Run end-to-end experiment (Parsing -> Indexing -> Evaluation)
+    # Option A: Quick run (uses pre-parsed data if available)
     python src/experiments/run_comparison.py --safe
+
+    # Option B: Full pipeline from scratch
+    python src/parsing/generate_datasets.py      # Parse PDFs
+    python src/experiments/run_comparison.py     # Run comparison
+    python src/evaluation/auto_score.py          # Score results
+    python src/evaluation/visualize.py           # Generate charts
     ```
-
-
-### Run Experiment
-
-```bash
-# Generate parsed datasets (requires LlamaParse API key)
-python src/parsing/generate_datasets.py
-
-# Run comparison experiment
-python src/experiments/run_comparison.py --safe  # Safe mode for stability
-
-# Score results (auto + manual verification)
-python src/evaluation/auto_score.py
-
-# Generate visualizations
-python src/evaluation/visualize.py
-```
 
 ---
 
@@ -217,9 +242,6 @@ This project showcases proficiency in:
 2. Liu, J., et al. (2024). *LlamaIndex: A Data Framework for LLM Applications*. [llamaindex.ai](https://www.llamaindex.ai/)
 3. Xiao, S., et al. (2023). *BGE: BAAI General Embedding*. arXiv:2309.07597
 4. NVIDIA Corporation. (2024). *Annual Report (Form 10-K)*. SEC Filing.
-
----
-
 
 ---
 
