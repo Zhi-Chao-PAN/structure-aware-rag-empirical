@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridging the Structure-Gap: An Empirical Study on Layout-Aware Parsing for Financial RAG</title>
+    <style>
+        /* === CSS Reset & Base === */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        /* === Typography === */
+        :root {
+            --font-serif: 'Georgia', 'Times New Roman', serif;
+            --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, Helvetica, Arial, sans-serif;
+            --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            
+            --color-text: #1a202c;
+            --color-text-muted: #4a5568;
+            --color-accent: #2b6cb0;
+            --color-bg: #ffffff;
+            --color-border: #e2e8f0;
+            --color-code-bg: #f7fafc;
+            --color-table-stripe: #f7fafc;
+        }
+
+        html { font-size: 16px; }
+
+        body {
+            font-family: var(--font-serif);
+            line-height: 1.75;
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 40px;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* === Headings === */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-sans);
+            font-weight: 700;
+            color: var(--color-text);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            text-align: center;
+            border-bottom: none;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid var(--color-border);
+            margin-top: 3rem;
+        }
+
+        h3 {
+            font-size: 1.15rem;
+            color: var(--color-text-muted);
+        }
+
+        h4 { font-size: 1rem; }
+
+        /* === Body Text === */
+        p {
+            margin-bottom: 1.25rem;
+            text-align: justify;
+            hyphens: auto;
+        }
+
+        /* === Lists === */
+        ul, ol {
+            margin-bottom: 1.25rem;
+            padding-left: 1.75rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        li > ul, li > ol {
+            margin-top: 0.5rem;
+            margin-bottom: 0;
+        }
+
+        /* === Links === */
+        a {
+            color: var(--color-accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        a:hover {
+            border-bottom-color: var(--color-accent);
+        }
+
+        /* === Blockquotes === */
+        blockquote {
+            border-left: 4px solid var(--color-accent);
+            margin: 1.5rem 0;
+            padding: 0.75rem 1.25rem;
+            background-color: var(--color-code-bg);
+            font-style: italic;
+            color: var(--color-text-muted);
+        }
+
+        blockquote p:last-child { margin-bottom: 0; }
+
+        /* === Code === */
+        code {
+            font-family: var(--font-mono);
+            font-size: 0.85em;
+            background-color: var(--color-code-bg);
+            padding: 0.15em 0.4em;
+            border-radius: 4px;
+            border: 1px solid var(--color-border);
+        }
+
+        pre {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            background-color: var(--color-code-bg);
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            padding: 1rem 1.25rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            line-height: 1.5;
+        }
+
+        pre code {
+            background: none;
+            padding: 0;
+            border: none;
+            font-size: inherit;
+        }
+
+        /* === Tables === */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.75rem 0;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border: 1px solid var(--color-border);
+        }
+
+        th {
+            font-family: var(--font-sans);
+            font-weight: 600;
+            background-color: var(--color-table-stripe);
+            color: var(--color-text);
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: var(--color-table-stripe);
+        }
+
+        /* Table caption styling */
+        table + p > em:first-child,
+        table + p > strong:first-child {
+            display: block;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            margin-top: -1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* === Images === */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1.5rem auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        p img {
+            margin: 0 auto;
+        }
+
+        /* === Horizontal Rules === */
+        hr {
+            border: none;
+            border-top: 1px solid var(--color-border);
+            margin: 3rem 0;
+        }
+
+        /* === Strong/Em === */
+        strong { font-weight: 700; }
+        em { font-style: italic; }
+
+        /* === Figure/Caption (for image pairs) === */
+        p[align="center"] {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        p[align="center"] img {
+            margin: 0;
+            max-width: 48%;
+        }
+
+        /* === Print Styles === */
+        @media print {
+            html { font-size: 11pt; }
+
+            body {
+                padding: 0;
+                max-width: 100%;
+                line-height: 1.6;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                page-break-after: avoid;
+            }
+
+            table, img, blockquote, pre {
+                page-break-inside: avoid;
+            }
+
+            a {
+                color: var(--color-text);
+                border-bottom: none;
+            }
+
+            a[href^="http"]::after {
+                content: none; /* Don't print URLs */
+            }
+
+            blockquote {
+                background-color: transparent;
+                border-left-color: #333;
+            }
+
+            th {
+                background-color: #eee !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            tbody tr:nth-child(even) {
+                background-color: transparent !important;
+            }
+        }
+
+        /* === First h1 special styling (title) === */
+        body > h1:first-of-type {
+            margin-top: 0;
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* === Abstract styling === */
+        body > h2#abstract + p {
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+<h1 id="bridging-the-structure-gap-an-empirical-study-on-layout-aware-parsing-for-financial-rag">Bridging the Structure-Gap: An Empirical Study on Layout-Aware Parsing for Financial RAG</h1>
+<p align="center"><strong>Zhichao Pan</strong></p>
+<p align="center"><em>Independent Research</em></p>
+<p align="center">January 2026</p>
+
+<hr />
+<h2 id="abstract">Abstract</h2>
+<p><strong>Problem Definition.</strong> Financial documents, such as Form 10-K filings and earnings reports, rely heavily on complex tables to convey critical numerical information. Standard Retrieval-Augmented Generation (RAG) pipelines, which treat documents as unstructured flat text, systematically fail to preserve the spatial relationships within these tables. We term this fundamental mismatch between the <em>geometric layout</em> of source documents and their <em>linearized text representation</em> the <strong>"Structure-Gap."</strong> This gap leads to semantic collision—where visually distinct data points become ambiguous in text—and is a primary driver of hallucination in financial question-answering (QA) tasks.</p>
+<p><strong>Proposed Method.</strong> We propose a <strong>Layout-Aware Parsing Pipeline</strong> that leverages <strong>Vision-Language Model (VLM) based document parsing</strong> to extract source PDFs into <strong>Markdown-serialized</strong> text, explicitly preserving tabular structure as machine-readable Markdown tables. This representation is then chunked and indexed using standard dense retrieval.</p>
+<p><strong>Results.</strong> Evaluated on a curated benchmark derived from the NVIDIA FY2024 10-K filing (N=8 QA pairs), our Layout-Aware pipeline achieved an overall accuracy of <strong>68.8%</strong>, representing a <strong>+37.5% relative improvement</strong> over the Unstructured Baseline (50.0%). A detailed failure mode analysis reveals that the remaining errors are attributable to three distinct categories: Retrieval Failure (33%), Generation Error (33%), and Semantic Ambiguity in the embedding model (33%). This analysis suggests that layout-aware parsing is a <em>necessary but not sufficient</em> condition for reliable Financial RAG; future work must integrate more nuanced retrieval techniques.</p>
+<hr />
+<h2 id="1-introduction">1. Introduction</h2>
+<h3 id="11-the-structure-gap-problem">1.1 The Structure-Gap Problem</h3>
+<p>Financial documents are inherently <strong>semi-structured</strong>. A Consolidated Statement of Income is not merely a paragraph of text; it is a precisely formatted table where the spatial position of a value (e.g., the cell at the intersection of "Revenue" and "FY2024") is semantically critical. When a standard PDF extractor (e.g., PyPDF2) linearizes this table into a "bag of words," the row-column associations are destroyed.</p>
+<p>Consider the following example from the NVIDIA 10-K:</p>
+<p><strong>Table 1: Parsing Quality Comparison</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Output Snippet</th>
+<th style="text-align: center;">Structure Preserved?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Unstructured (PyPDF2)</strong></td>
+<td style="text-align: left;"><code>Revenue $60,922 $26,974 ... Gross margin 72.7% 56.9%</code></td>
+<td style="text-align: center;">❌ No</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Layout-Aware (VLM)</strong></td>
+<td style="text-align: left;"><code>| Metric | FY2024 | FY2023 |</code><br><code>|---|---|---|</code><br><code>| Revenue | $60,922 | $26,974 |</code></td>
+<td style="text-align: center;">✅ Yes</td>
+</tr>
+</tbody>
+</table>
+<p>The Unstructured output juxtaposes values from different rows and columns, creating <strong>semantic collision</strong>: the LLM cannot reliably determine which value belongs to which year. The Layout-Aware output, by serializing the table into Markdown, provides an explicit row-column schema that the LLM's attention mechanism can leverage.</p>
+<h3 id="12-our-contributions">1.2 Our Contributions</h3>
+<ol>
+<li><strong>Formal Definition of the Structure-Gap.</strong> We articulate the problem of spatial information loss in document linearization as a distinct failure mode in RAG pipelines for semi-structured data.</li>
+<li><strong>Layout-Aware Parsing Pipeline.</strong> We propose and implement a pipeline using VLM-based Markdown serialization to preserve tabular structure.</li>
+<li><strong>Rigorous Error Analysis.</strong> Beyond aggregate accuracy, we provide a fine-grained <strong>Failure Mode Analysis</strong> (Section 4) that categorizes errors into Retrieval, Generation, and Embedding failures, offering actionable insights for future research.</li>
+</ol>
+<hr />
+<h2 id="2-methodology">2. Methodology</h2>
+<h3 id="21-experimental-design">2.1 Experimental Design</h3>
+<p>We employ a controlled A/B experimental design with the following fixed parameters:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Component</th>
+<th style="text-align: left;">Configuration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Embedding Model</strong></td>
+<td style="text-align: left;">BAAI/bge-large-en-v1.5 (HuggingFace)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>LLM (Generation)</strong></td>
+<td style="text-align: left;">DeepSeek-R1 8B (Local, via Ollama)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Vector Store</strong></td>
+<td style="text-align: left;">Local Chroma DB</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Top-K Retrieval</strong></td>
+<td style="text-align: left;">k=3</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>independent variable</strong> is the <strong>document parsing strategy</strong>:<br />
+-   <strong>Unstructured Baseline</strong>: PyPDF2 plain-text extraction → recursive character chunking.<br />
+-   <strong>Layout-Aware (Proposed)</strong>: VLM-based parser (LlamaParse) → Markdown output → Markdown-aware chunking.</p>
+<h3 id="22-benchmark-dataset">2.2 Benchmark Dataset</h3>
+<ul>
+<li><strong>Source Document</strong>: <a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm">NVIDIA Corporation FY2024 Annual Report (Form 10-K)</a> — a document characterized by complex multi-column tables and dense numerical data.</li>
+<li><strong>Evaluation Set</strong>: 8 curated QA pairs spanning two task types:<ul>
+<li><strong>Simple Lookup</strong> (4 questions): Direct extraction of a single value (e.g., "What was the Total Revenue for FY2024?").</li>
+<li><strong>Cross-Column Comparison</strong> (4 questions): Reasoning requiring comparison across multiple cells (e.g., "Did Operating Income increase from 2023 to 2024, and by how much?").</li>
+</ul>
+</li>
+</ul>
+<h3 id="23-evaluation-metrics">2.3 Evaluation Metrics</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Metric</th>
+<th style="text-align: left;">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Accuracy (Exact Match)</strong></td>
+<td style="text-align: left;">A response is scored <code>1.0</code> if the extracted numerical value matches the ground truth within a ±1% tolerance. Partial credit (<code>0.5</code>) is awarded for correct methodology leading to a close but inexact answer. All other responses are scored <code>0.0</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Latency</strong></td>
+<td style="text-align: left;">End-to-end wall-clock time from query submission to final answer (in seconds).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3-results">3. Results</h2>
+<h3 id="31-aggregate-performance">3.1 Aggregate Performance</h3>
+<p><strong>Table 2: Main Results Summary</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pipeline</th>
+<th style="text-align: center;">Overall Accuracy</th>
+<th style="text-align: center;">Simple Lookup</th>
+<th style="text-align: center;">Cross-Column</th>
+<th style="text-align: center;">Avg. Latency (s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Unstructured Baseline</strong></td>
+<td style="text-align: center;">50.0% (4/8)</td>
+<td style="text-align: center;">50.0%</td>
+<td style="text-align: center;">50.0%</td>
+<td style="text-align: center;">89.4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Layout-Aware (Proposed)</strong></td>
+<td style="text-align: center;"><strong>68.8%</strong> (5.5/8)</td>
+<td style="text-align: center;"><strong>75.0%</strong></td>
+<td style="text-align: center;"><strong>62.5%</strong></td>
+<td style="text-align: center;">88.4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Δ (Relative Improvement)</strong></td>
+<td style="text-align: center;"><strong>+37.5%</strong></td>
+<td style="text-align: center;">+50.0%</td>
+<td style="text-align: center;">+25.0%</td>
+<td style="text-align: center;">-1.1%</td>
+</tr>
+</tbody>
+</table>
+<p>The Layout-Aware pipeline demonstrates statistically and practically significant improvement on Simple Lookup tasks, confirming that structure preservation directly aids direct value extraction. The improvement on Cross-Column tasks is more modest, suggesting that multi-hop reasoning remains a challenge.</p>
+<h3 id="32-visual-summary">3.2 Visual Summary</h3>
+<p align="center">
+  <img src="accuracy_comparison.png" width="48%" alt="Accuracy Comparison">
+  <img src="latency_distribution.png" width="48%" alt="Latency Distribution">
+</p>
+
+<p><em>Figure 1: (Left) Accuracy comparison by pipeline. (Right) Per-question latency distribution. Notably, the Layout-Aware pipeline incurs </em><em>no significant latency overhead</em><em> compared to the baseline.</em></p>
+<hr />
+<h2 id="4-failure-mode-analysis">4. Failure Mode Analysis</h2>
+<p>The most critical contribution of this study is not the accuracy gain, but the <strong>systematic analysis of the remaining 31.2% of errors</strong> in the Layout-Aware pipeline. Understanding <em>why</em> a system fails is often more valuable than knowing <em>that</em> it succeeded. We categorize the three failures as follows:</p>
+<h3 id="41-error-taxonomy">4.1 Error Taxonomy</h3>
+<p><strong>Table 3: Failure Mode Breakdown (N=3 errors in Proposed Pipeline)</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Question ID</th>
+<th style="text-align: left;">Task Type</th>
+<th style="text-align: left;">Failure Mode</th>
+<th style="text-align: left;">Root Cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Q3</strong></td>
+<td style="text-align: left;">Cross-Column</td>
+<td style="text-align: left;"><strong>Retrieval Failure</strong></td>
+<td style="text-align: left;">The relevant chunk (R&amp;D expenses table) was not retrieved in the top-k results. The embedding model failed to rank it highly enough given the query.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Q4</strong></td>
+<td style="text-align: left;">Simple Lookup</td>
+<td style="text-align: left;"><strong>Generation Error</strong></td>
+<td style="text-align: left;">Correct data was retrieved; however, the LLM's chain-of-thought reasoning introduced arithmetic confusion regarding units (millions vs. billions), leading to a slightly inexact final answer. (Partial credit awarded.)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Q7</strong></td>
+<td style="text-align: left;">Simple Lookup</td>
+<td style="text-align: left;"><strong>Semantic Ambiguity</strong></td>
+<td style="text-align: left;">The query asked for "Basic" EPS, but the retrieved chunk contained "Diluted" EPS. The dense embedding model could not distinguish the fine-grained semantic difference between these near-synonymous terms.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="42-implications-for-future-research">4.2 Implications for Future Research</h3>
+<p>This analysis yields three actionable insights:</p>
+<ol>
+<li>
+<p><strong>Retrieval is a Bottleneck (Q3).</strong> Even with perfect parsing, if the retriever fails to surface the correct chunk, the generation layer can only hallucinate. This motivates hybrid retrieval strategies (e.g., BM25 + dense) or query expansion.</p>
+</li>
+<li>
+<p><strong>LLM Arithmetic is Unreliable (Q4).</strong> For financial applications requiring precise numerical answers, a dedicated calculation layer (e.g., chaining the LLM with a code interpreter) may be necessary to avoid generation-time errors.</p>
+</li>
+<li>
+<p><strong>Semantic Ambiguity Defeats Dense Embeddings (Q7).</strong> When two terms (e.g., "Basic" vs. "Diluted" EPS) are semantically near-identical in general language but critically distinct in a domain context, dense embeddings fail. This strongly suggests the need for <strong>late-interaction retrieval models</strong> (e.g., ColBERT) or <strong>domain-adapted embeddings</strong> for financial NLP.</p>
+</li>
+</ol>
+<hr />
+<h2 id="5-discussion-and-limitations">5. Discussion and Limitations</h2>
+<h3 id="51-generalizability">5.1 Generalizability</h3>
+<p>The primary limitation of this study is the reliance on a <strong>single-document benchmark</strong> (NVIDIA FY2024 10-K). While the findings are internally consistent, they may not generalize to documents with different formatting conventions (e.g., handwritten annotations, multi-lingual reports, or highly irregular table structures). Future work should expand the benchmark to include 5-10 diverse financial reports (e.g., Apple, Tesla, Berkshire Hathaway) to establish broader validity.</p>
+<h3 id="52-baseline-strength">5.2 Baseline Strength</h3>
+<p>We acknowledge that PyPDF2 represents a minimal baseline. Stronger comparisons against more capable parsers—such as Unstructured.io, dedicated OCR engines (e.g., Tesseract, PaddleOCR), or even GPT-4 Vision-based extraction—would provide a more rigorous assessment of where the Layout-Aware approach sits on the Pareto frontier of performance and cost.</p>
+<h3 id="53-on-the-role-of-proprietary-tools">5.3 On the Role of Proprietary Tools</h3>
+<p>This study utilizes LlamaParse, a commercial API, as the VLM-based parser. We deliberately frame our contribution not as an endorsement of a specific tool, but as evidence for the general principle of <strong>Markdown Serialization</strong> as a powerful intermediate representation for semi-structured documents. The core insight—that preserving layout structure benefits downstream LLM reasoning—is tool-agnostic and replicable with open-source VLMs (e.g., Nougat, Pix2Struct).</p>
+<hr />
+<h2 id="6-conclusion">6. Conclusion</h2>
+<p>This empirical study provides evidence that <strong>layout-aware parsing significantly improves RAG performance on financial documents</strong> by bridging the Structure-Gap. By serializing tables into Markdown, we achieved a 37.5% relative improvement in accuracy on a targeted benchmark. More importantly, our detailed failure mode analysis reveals that layout-aware parsing is a <em>necessary but not sufficient</em> condition: complementary advances in retrieval (for recall), generation (for precision arithmetic), and embedding (for semantic nuance) are required for production-grade Financial RAG.</p>
+<p><strong>Key Takeaways:</strong><br />
+1.  <strong>Structure matters.</strong> Unstructured text extraction is fundamentally inadequate for tabular data.<br />
+2.  <strong>Markdown is a powerful representation.</strong> It is both human-readable and LLM-friendly.<br />
+3.  <strong>Failed cases are informative.</strong> The 31.2% error rate is not a ceiling but a roadmap for improvement.</p>
+<hr />
+<h2 id="references">References</h2>
+<ol>
+<li>Lewis, P., et al. (2020). <em>Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks</em>. NeurIPS.</li>
+<li>Liu, J., et al. (2024). <em>LlamaIndex: A Data Framework for LLM Applications</em>. <a href="https://www.llamaindex.ai/">llamaindex.ai</a></li>
+<li>Xiao, S., et al. (2023). <em>BGE: BAAI General Embedding</em>. arXiv:2309.07597.</li>
+<li>Khattab, O., &amp; Zaharia, M. (2020). <em>ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT</em>. SIGIR.</li>
+<li>Blecher, L., et al. (2023). <em>Nougat: Neural Optical Understanding for Academic Documents</em>. arXiv:2308.13418.</li>
+<li>NVIDIA Corporation. (2024). <em>Annual Report (Form 10-K)</em>. SEC Filing.</li>
+</ol>
+</body>
+</html>

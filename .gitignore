@@ -1,0 +1,50 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.conda/
+
+# Environment variables (NEVER upload API keys!)
+.env
+
+# Data files
+data/chroma_db/
+data/raw_pdfs/
+data/parsed/
+# Ignore experiment result CSVs to force fresh replication or conscious upload
+experiments/*.csv
+!experiments/example_results.csv
+
+# Local utilities
+check_ollama.py
+gen_key.py
+
+# IDE configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+*.tmp
+*.bak
+
+# Reports (generated images)
+report/*.png
