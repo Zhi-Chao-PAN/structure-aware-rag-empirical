@@ -278,19 +278,20 @@ async def run_evaluation_pipeline(
             
     return new_results
 
-async def main():
-    parser = argparse.ArgumentParser(description="Structure-Aware RAG Comparison")
-    parser.add_argument("--safe", action="store_true", help="Run in Safe Mode (Low concurrency)")
-    parser.add_argument("--concurrency", type=int, default=2, help="Concurrency limit")
-    parser.add_argument("--no-checkpoint", action="store_true", help="Disable incremental saving")
-    parser.add_argument("--limit", type=int, default=None, help="Limit number of questions")
-    args = parser.parse_args()
-
+async def run_experiment(safe: bool = False, concurrency: int = 2, no_checkpoint: bool = False, limit: Optional[int] = None):
+    """
+    Main entry point for running the comparison experiment programmatically.
+    """
     # Reproducibility
     set_seed(42)
 
-    if args.safe:
-        args.concurrency = 1
+    # CLI args mock for compatibility
+    args = argparse.Namespace(
+        safe=safe,
+        concurrency=1 if safe else concurrency,
+        no_checkpoint=no_checkpoint,
+        limit=limit
+    )
 
     print(get_system_info(args))
     
@@ -371,6 +372,21 @@ async def main():
         logger.info("No results found.")
     
     logger.info("\n🏁 Experiment Finished.")
+
+async def main():
+    parser = argparse.ArgumentParser(description="Structure-Aware RAG Comparison")
+    parser.add_argument("--safe", action="store_true", help="Run in Safe Mode (Low concurrency)")
+    parser.add_argument("--concurrency", type=int, default=2, help="Concurrency limit")
+    parser.add_argument("--no-checkpoint", action="store_true", help="Disable incremental saving")
+    parser.add_argument("--limit", type=int, default=None, help="Limit number of questions")
+    args = parser.parse_args()
+
+    await run_experiment(
+        safe=args.safe, 
+        concurrency=args.concurrency, 
+        no_checkpoint=args.no_checkpoint, 
+        limit=args.limit
+    )
 
 if __name__ == "__main__":
     asyncio.run(main())

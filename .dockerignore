@@ -1,0 +1,30 @@
+# Git
+.git
+.gitignore
+
+# Environment variables
+.env
+.env.example
+
+# Python cache
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+.venv
+venv
+env
+
+# IDEs
+.vscode
+.idea
+
+# Local data & logs
+data/
+logs/
+experiments/*.csv
+report/*.html
+report/*.png
+run_log.txt

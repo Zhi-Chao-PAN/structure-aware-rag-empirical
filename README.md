@@ -209,16 +209,28 @@ structure-aware-rag-study/
     # ⚠️ NOTE: LlamaParse uploads data to the cloud. Do not use for highly sensitive/PII data.
     ```
 
-4.  **Run End-to-End Experiment**
+4.  **Run with Professional CLI**
     ```bash
-    # Option A: Quick run (uses pre-parsed data if available)
-    python src/experiments/run_comparison.py --safe
+    # View all commands
+    python -m src.main --help
 
-    # Option B: Full pipeline from scratch
-    python src/parsing/generate_datasets.py      # Parse PDFs
-    python src/experiments/run_comparison.py     # Run comparison
-    python src/evaluation/auto_score.py          # Score results
-    python src/evaluation/visualize.py           # Generate charts
+    # Run experiment (Safe Mode)
+    python -m src.main experiment --safe
+
+    # Parse documents
+    python -m src.main parse
+
+    # Generate visualizations
+    python -m src.main viz
+    ```
+
+5.  **Run with Docker (Optional)**
+    ```bash
+    # Build container
+    docker build -t structure-rag .
+
+    # Run experiment inside container
+    docker run --rm --gpus all -v $(pwd)/data:/app/data structure-rag experiment
     ```
 
 ---
