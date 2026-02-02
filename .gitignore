@@ -46,7 +46,8 @@ logs/
 *.tmp
 *.bak
 
-# Reports (generated images)
+# Reports (generated images and html)
+report/*.html
 
 
 # Logs

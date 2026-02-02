@@ -201,19 +201,32 @@ structure-aware-rag-study/
     ```bash
     git clone https://github.com/Zhi-Chao-PAN/structure-aware-rag-study.git
     cd structure-aware-rag-study
+    ```
+
+3.  **Install Dependencies**
+    ```bash
+    # Install in editable mode (recommended for developers)
+    pip install -e .
+    
+    # Or standard install
     pip install -r requirements.txt
     ```
 
-3.  **Configure Environment**
+    *Note: Editable install allows you to use the `structure-rag` CLI command globally.*
+
+4.  **Configure Environment**
     ```bash
     cp .env.example .env
     # Add your **LlamaParse API key** to .env (get one at https://cloud.llamaindex.ai/)
     # ⚠️ NOTE: LlamaParse uploads data to the cloud. Do not use for highly sensitive/PII data.
     ```
 
-4.  **Run with Professional CLI**
+5.  **Run with Professional CLI**
     ```bash
-    # View all commands
+    # View all commands using the new entry point
+    structure-rag --help
+    
+    # Or using python module syntax
     python -m src.main --help
 
     # Run experiment (Safe Mode)
