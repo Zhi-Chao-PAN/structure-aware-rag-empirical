@@ -101,12 +101,12 @@ graph TD
 | **Document Parsing** | PyPDF2 (Unstructured Text) | **LlamaParse (Markdown Structure)** |
 | **Vector Indexing** | Dense Vector Index (BGE-Large) | Dense Vector Index (BGE-Large) |
 | **LLM Reasoning** | DeepSeek-R1 8B (Local) | DeepSeek-R1 8B (Local) |
-| **Evaluation** | Human-in-the-loop (N=8) | Human-in-the-loop (N=8) |
+| **Evaluation** | Human-in-the-loop (N=30) | Human-in-the-loop (N=30) |
 
 ### Dataset
 - **Source**: [NVIDIA Corporation Fiscal Year 2024 Annual Report (10-K Filing)](https://investor.nvidia.com/financial-info/sec-filings/default.aspx) | [Direct PDF](https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm)
 - **Focus**: Consolidated Statements of Income (Pages 34-36)
-- **Benchmark**: 8 curated questions spanning Simple Lookup and Cross-Column Comparison tasks
+- **Benchmark**: 30 curated questions spanning Simple Lookup and Cross-Column Comparison tasks
 
 ---
 
@@ -124,7 +124,7 @@ graph TD
 | **Cross-Column Tasks** | Partial | Full | Significant |
 | **Avg. Latency** | ~45s | ~47s | Negligible overhead |
 
-> 📏 *Accuracy measured by strict numerical matching (±1% tolerance) or semantic equivalence verified by human evaluation (N=8 questions).*
+> 📏 *Accuracy measured by strict numerical matching (±1% tolerance) or semantic equivalence verified by human evaluation (N=30 questions).*
 
 ### Key Insights
 1. **Structure Preservation is Critical**: The baseline completely failed on revenue lookup tasks due to destroyed table alignment.
