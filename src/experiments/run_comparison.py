@@ -277,6 +277,7 @@ async def run_evaluation_pipeline(
             save_checkpoint(batch_results, OUTPUT_FILE)
         
         # Performance: Clear VRAM after batch
+        del batch_results
         if torch.cuda.is_available():
             torch.cuda.empty_cache()
             

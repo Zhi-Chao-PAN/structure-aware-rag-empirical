@@ -222,7 +222,7 @@ structure-aware-rag-study/
     structure-rag --help
     
     # Check your hardware environment
-    structure-rag check-env
+    structure-rag verify
 
     # Run comparison experiment
     structure-rag experiment --safe

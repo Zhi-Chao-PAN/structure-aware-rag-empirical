@@ -72,9 +72,9 @@ def run_viz_command(args):
         logger.error(f"Visualization Failed: {e}")
         sys.exit(1)
 
-def run_check_env_command(args):
+def run_verify_command(args):
     """Run hardware verification checks."""
-    logger.info("🕵️ Checking Environment...")
+    logger.info("🕵️ Verifying Environment...")
     try:
         # Inline implementation to avoid keeping scripts/verify_hardware.py
         import platform
@@ -102,7 +102,7 @@ def run_check_env_command(args):
             print("  ⚠️ CUDA Not Available")
             
     except Exception as e:
-        logger.error(f"Check Env Failed: {e}")
+        logger.error(f"Verify Failed: {e}")
         sys.exit(1)
 
 def main():
@@ -128,8 +128,8 @@ def main():
     # Command: viz
     subparsers.add_parser("viz", help="Generate plots and reports")
 
-    # Command: check-env
-    subparsers.add_parser("check-env", help="Verify hardware and environment")
+    # Command: verify
+    subparsers.add_parser("verify", help="Check hardware compatibility")
 
     args = parser.parse_args()
 
@@ -141,8 +141,8 @@ def main():
         run_score_command(args)
     elif args.command == "viz":
         run_viz_command(args)
-    elif args.command == "check-env":
-        run_check_env_command(args)
+    elif args.command == "verify":
+        run_verify_command(args)
     else:
         parser.print_help()
         sys.exit(1)
