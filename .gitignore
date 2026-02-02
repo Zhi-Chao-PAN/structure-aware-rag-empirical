@@ -48,3 +48,6 @@ logs/
 
 # Reports (generated images)
 report/*.png
+
+# Logs
+run_log.txt
