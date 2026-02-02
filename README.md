@@ -197,7 +197,7 @@ structure-aware-rag-study/
     ollama pull deepseek-r1:8b
     ```
 
-2.  **Clone & Install**
+2.  **Clone Repository**
     ```bash
     git clone https://github.com/Zhi-Chao-PAN/structure-aware-rag-study.git
     cd structure-aware-rag-study
@@ -205,19 +205,14 @@ structure-aware-rag-study/
 
 3.  **Install Dependencies**
     ```bash
-    # Install in editable mode (recommended for developers)
+    # Install in editable mode (enables 'structure-rag' command)
     pip install -e .
-    
-    # Or standard install
-    pip install -r requirements.txt
     ```
-
-    *Note: Editable install allows you to use the `structure-rag` CLI command globally.*
 
 4.  **Configure Environment**
     ```bash
     cp .env.example .env
-    # Add your **LlamaParse API key** to .env (get one at https://cloud.llamaindex.ai/)
+    # Add your **LlamaParse API key** to .env
     # ⚠️ NOTE: LlamaParse uploads data to the cloud. Do not use for highly sensitive/PII data.
     ```
 
@@ -226,19 +221,16 @@ structure-aware-rag-study/
     # View all commands using the new entry point
     structure-rag --help
     
-    # Or using python module syntax
-    python -m src.main --help
+    # Check your hardware environment
+    structure-rag check-env
 
-    # Run experiment (Safe Mode)
-    python -m src.main experiment --safe
+    # Run comparison experiment
+    structure-rag experiment --safe
 
     # Parse documents
-    python -m src.main parse
+    structure-rag parse
 
     # Generate visualizations
-    python -m src.main viz
-    ```
-
 5.  **Run with Docker (Optional)**
     ```bash
     # Build container

@@ -72,6 +72,39 @@ def run_viz_command(args):
         logger.error(f"Visualization Failed: {e}")
         sys.exit(1)
 
+def run_check_env_command(args):
+    """Run hardware verification checks."""
+    logger.info("🕵️ Checking Environment...")
+    try:
+        # Inline implementation to avoid keeping scripts/verify_hardware.py
+        import platform
+        import psutil
+        print(f"\n{'='*50}\n  System Information\n{'='*50}")
+        print(f"  OS: {platform.system()} {platform.release()}")
+        print(f"  Python: {sys.version.split()[0]}")
+        
+        # CPU
+        import multiprocessing
+        print(f"  CPU Cores: {multiprocessing.cpu_count()}")
+        mem = psutil.virtual_memory()
+        print(f"  RAM: {mem.available / 1024**3:.1f}GB / {mem.total / 1024**3:.1f}GB")
+
+        # PyTorch
+        import torch
+        print(f"\n{'='*50}\n  PyTorch & GPU\n{'='*50}")
+        print(f"  Torch: {torch.__version__}")
+        if torch.cuda.is_available():
+            print(f"  ✅ CUDA: {torch.version.cuda}")
+            print(f"  GPU: {torch.cuda.get_device_name(0)}")
+            props = torch.cuda.get_device_properties(0)
+            print(f"  VRAM: {props.total_memory / 1024**3:.1f} GB")
+        else:
+            print("  ⚠️ CUDA Not Available")
+            
+    except Exception as e:
+        logger.error(f"Check Env Failed: {e}")
+        sys.exit(1)
+
 def main():
     parser = argparse.ArgumentParser(
         description="Structure-Aware RAG: Scientific Toolbelt",
@@ -95,6 +128,9 @@ def main():
     # Command: viz
     subparsers.add_parser("viz", help="Generate plots and reports")
 
+    # Command: check-env
+    subparsers.add_parser("check-env", help="Verify hardware and environment")
+
     args = parser.parse_args()
 
     if args.command == "experiment":
@@ -105,6 +141,8 @@ def main():
         run_score_command(args)
     elif args.command == "viz":
         run_viz_command(args)
+    elif args.command == "check-env":
+        run_check_env_command(args)
     else:
         parser.print_help()
         sys.exit(1)

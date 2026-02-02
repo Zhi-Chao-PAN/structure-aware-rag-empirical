@@ -275,6 +275,10 @@ async def run_evaluation_pipeline(
         # Checkpoint: Save immediately (incremental)
         if not args.no_checkpoint:
             save_checkpoint(batch_results, OUTPUT_FILE)
+        
+        # Performance: Clear VRAM after batch
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
             
     return new_results
 
