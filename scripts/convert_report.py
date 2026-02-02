@@ -304,6 +304,12 @@ def convert_md_to_html(md_path, html_path):
     print(f"  Open in browser and use 'Print → Save as PDF' for best results.")
 
 if __name__ == "__main__":
-    md_file = r"c:\Users\22304\Desktop\structure-aware-rag-study\report\README.md"
-    html_file = r"c:\Users\22304\Desktop\structure-aware-rag-study\report\Technical_Report_Structure_Aware_RAG.html"
-    convert_md_to_html(md_file, html_file)
+    # Use relative paths for portability and professionalism
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    md_file = os.path.join(base_dir, "report", "README.md")
+    html_file = os.path.join(base_dir, "report", "Technical_Report_Structure_Aware_RAG.html")
+
+    if os.path.exists(md_file):
+        convert_md_to_html(md_file, html_file)
+    else:
+        print(f"❌ Could not find report source at: {md_file}")
