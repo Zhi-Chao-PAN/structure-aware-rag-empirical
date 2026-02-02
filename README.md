@@ -205,7 +205,7 @@ structure-aware-rag-study/
 3.  **Configure Environment**
     ```bash
     cp .env.example .env
-    # Add your LlamaParse API key to .env (get one at https://cloud.llamaindex.ai/)
+    # Add your **LlamaParse API key** to .env (get one at https://cloud.llamaindex.ai/)
     # ⚠️ NOTE: LlamaParse uploads data to the cloud. Do not use for highly sensitive/PII data.
     ```
 
