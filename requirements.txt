@@ -3,12 +3,12 @@ llama-index-readers-file
 llama-index-llms-ollama
 llama-index-embeddings-huggingface
 llama-parse
-pandas>=2.0.0
+pandas==2.2.0
 matplotlib
 seaborn
 python-dotenv
-torch>=2.0.0
-transformers
+torch==2.1.2
+transformers==4.36.2
 pypdf
 pdfplumber
 nest-asyncio
