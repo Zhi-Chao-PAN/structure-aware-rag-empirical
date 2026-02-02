@@ -12,7 +12,7 @@
 
 **Proposed Method.** We propose a **Layout-Aware Parsing Pipeline** that leverages **Vision-Language Model (VLM) based document parsing** to extract source PDFs into **Markdown-serialized** text, explicitly preserving tabular structure as machine-readable Markdown tables. This representation is then chunked and indexed using standard dense retrieval.
 
-**Results.** Evaluated on a curated benchmark derived from the NVIDIA FY2024 10-K filing (N=8 QA pairs), our Layout-Aware pipeline achieved an overall accuracy of **68.8%**, representing a **+37.5% relative improvement** over the Unstructured Baseline (50.0%). A detailed failure mode analysis reveals that the remaining errors are attributable to three distinct categories: Retrieval Failure (33%), Generation Error (33%), and Semantic Ambiguity in the embedding model (33%). This analysis suggests that layout-aware parsing is a *necessary but not sufficient* condition for reliable Financial RAG; future work must integrate more nuanced retrieval techniques.
+**Results.** Evaluated on a curated benchmark derived from the NVIDIA FY2024 10-K filing (N=30 QA pairs), our Layout-Aware pipeline achieved an overall accuracy of **68.8%** (preliminary), representing a **+37.5% relative improvement** over the Unstructured Baseline. A detailed failure mode analysis reveals that the remaining errors are attributable to three distinct categories: Retrieval Failure (33%), Generation Error (33%), and Semantic Ambiguity in the embedding model (33%). This analysis suggests that layout-aware parsing is a *necessary but not sufficient* condition for reliable Financial RAG; future work must integrate more nuanced retrieval techniques.
 
 ---
 
@@ -61,9 +61,9 @@ The **independent variable** is the **document parsing strategy**:
 ### 2.2 Benchmark Dataset
 
 -   **Source Document**: [NVIDIA Corporation FY2024 Annual Report (Form 10-K)](https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm) — a document characterized by complex multi-column tables and dense numerical data.
--   **Evaluation Set**: 8 curated QA pairs spanning two task types:
-    -   **Simple Lookup** (4 questions): Direct extraction of a single value (e.g., "What was the Total Revenue for FY2024?").
-    -   **Cross-Column Comparison** (4 questions): Reasoning requiring comparison across multiple cells (e.g., "Did Operating Income increase from 2023 to 2024, and by how much?").
+-   **Evaluation Set**: 30 curated QA pairs spanning two task types:
+    -   **Simple Lookup** (15 questions): Direct extraction of a single value (e.g., "What was the Total Revenue for FY2024?").
+    -   **Cross-Column Comparison** (15 questions): Reasoning requiring comparison across multiple cells (e.g., "Did Operating Income increase from 2023 to 2024, and by how much?").
 
 ### 2.3 Evaluation Metrics
 

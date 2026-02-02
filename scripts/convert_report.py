@@ -310,6 +310,9 @@ if __name__ == "__main__":
     html_file = os.path.join(base_dir, "report", "Technical_Report_Structure_Aware_RAG.html")
 
     if os.path.exists(md_file):
+        print(f"📖 Reading source from: {md_file}")
         convert_md_to_html(md_file, html_file)
     else:
-        print(f"❌ Could not find report source at: {md_file}")
+        print(f"❌ Error: Source file not found at {md_file}")
+        import sys
+        sys.exit(1)
