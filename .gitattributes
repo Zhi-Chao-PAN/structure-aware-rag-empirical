@@ -1,0 +1,16 @@
+# Auto-detect text files and perform LF normalization
+* text=auto
+
+# Custom binary diffs
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.ico binary
+
+# Python
+*.py diff=python
+
+# Shell
+*.sh text eol=lf

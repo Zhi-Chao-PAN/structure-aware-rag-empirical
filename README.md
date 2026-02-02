@@ -2,6 +2,8 @@
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Docker](https://img.shields.io/badge/Docker-Supported-blue?logo=docker&logoColor=white)](Dockerfile)
+[![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Evaluation](https://img.shields.io/badge/Evaluation-Human_Verified-success)](report/README.md)
 [![Accuracy Lift](https://img.shields.io/badge/Accuracy_Lift-%2B37.5%25-brightgreen)](report/README.md)
 [![Framework](https://img.shields.io/badge/Framework-LlamaIndex-orange)](https://www.llamaindex.ai/)
