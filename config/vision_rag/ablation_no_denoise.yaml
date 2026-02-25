@@ -1,0 +1,55 @@
+# Ablation: No Denoise (标准 InfoNCE, 无 FN 去噪)
+# lambda_meta = 0, lambda_self_max = 0 → 纯 InfoNCE
+
+model:
+  backbone: "vidore/colpali-v1.2"
+  projection_dim: 128
+  img_size: 1024
+  patch_size: 14
+  has_cls: true
+  gamma: 0.1
+  gate_init_bias: -2.0
+  freeze_backbone_epochs: 2
+
+loss:
+  tau_init: 0.02
+  tau_self: 0.1
+  learn_tau: true
+  lambda_meta: 0.0       # ← 关键: 禁用元数据 FN 去噪
+  lambda_self_max: 0.0   # ← 关键: 禁用 EMA 自蒸馏去噪
+  mu: 0.5
+  w_min: 0.05
+
+ema:
+  momentum_init: 0.999
+  momentum_final: 0.9995
+  warmup_epochs: 5
+
+curriculum:
+  lambda_self_warmup_steps: 1000
+  easy_epochs: 3
+  hard_epoch_start: 7
+
+data:
+  batch_size: 16
+  num_workers: 4
+  page_image_dir: "data/vision_rag/page_images"
+  mask_cache_dir: "data/vision_rag/spatial_masks"
+  metadata_dir: "data/vision_rag/metadata"
+
+train:
+  num_epochs: 15
+  lr: 2.0e-5
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  max_grad_norm: 1.0
+  mixed_precision: "bf16"
+  log_interval: 10
+  checkpoint_dir: "checkpoints/ablation_no_denoise"
+  wandb_project: "vision-rag-financial"
+  seed: 42
+
+eval:
+  top_k_patches: 10
+  vgs_iou_threshold: 0.1
+  grs_beta: 0.5

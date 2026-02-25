@@ -21,6 +21,12 @@ env/
 data/chroma_db/
 data/raw_pdfs/
 data/parsed/
+data/vision_rag/page_images/
+data/vision_rag/spatial_masks/
+data/.sec_download_cache/
+data/vision_rag/*.pkl
+*.pt
+*.parquet
 # Ignore experiment result CSVs to force fresh replication or conscious upload
 experiments/*.csv
 !experiments/example_results.csv
