@@ -1,30 +1,70 @@
-# Contributing to Structure-Aware RAG Study
+# Contributing to Structure-Aware RAG Empirical Study
 
-Thank you for your interest in contributing to the Structure-Aware RAG Study! This project is part of an academic research initiative, but we welcome community feedback and improvements.
+Welcome! This research project focuses on improving RAG accuracy for financial document analysis. We welcome contributions that enhance reproducibility, extend methodology, or improve the experimental framework.
 
-## Code of Conduct
+## 🎯 Contribution Areas
 
-This project adheres to the standard [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/). By participating, you are expected to uphold this code.
+### 1. Experimental Improvements
+- **New Parsers**: Add support for additional PDF/document parsers
+- **Evaluation Metrics**: Implement new evaluation metrics
+- **Dataset Expansion**: Add more financial documents to the benchmark
 
-## How Can I Contribute?
+### 2. Technical Enhancements
+- **Performance Optimization**: Improve RAG pipeline efficiency
+- **Visualization Tools**: Enhance result visualization
+- **Error Analysis**: Add tools for error analysis and debugging
 
-### Reporting Bugs
-- Ensure the bug was not already reported by searching on GitHub under [Issues](https://github.com/Zhi-Chao-PAN/structure-aware-rag-study/issues).
-- If you're unable to find an open issue addressing the problem, open a new one. Be sure to include a **title and clear description**, as well as as much relevant information as possible.
+### 3. Documentation
+- **Technical Reports**: Improve experimental documentation
+- **Tutorials**: Create usage tutorials
+- **API Documentation**: Enhance code documentation
 
-### Suggesting Enhancements
-- Open a new issue with a clear title and detailed description of your proposed enhancement.
+## 🚀 Development Guidelines
 
-### Pull Requests
-1. Fork the repo and create your branch from `main`.
-2. If you've added code that should be tested, add tests.
-3. Ensure the test suite passes.
-4. Make sure your code lints.
-5. Updates `README.md` if necessary.
+### Code Style
+- Follow PEP 8 conventions
+- Use type hints where appropriate
+- Write comprehensive docstrings
+- Include unit tests for new functionality
 
-## Stylechecks
-- We use `black` for code formatting.
-- Type hints are encouraged for all new function definitions.
+### Testing Requirements
+- All new code must include tests
+- Maintain or improve existing test coverage
+- Ensure reproducibility of experiments
 
-## License
-By contributing, you agree that your contributions will be licensed under its MIT License.
+### Documentation Updates
+- Update README.md for significant changes
+- Add/update docstrings for new functions
+- Create/update example notebooks
+
+## 📋 Pull Request Process
+
+1. **Check Existing Issues**: Ensure no duplicate work
+2. **Create Feature Branch**: From `main` branch
+3. **Implement Changes**: With tests and documentation
+4. **Run Tests**: Ensure all tests pass
+5. **Update Documentation**: As needed
+6. **Submit PR**: With clear description
+
+## 🧪 Reproducibility Standards
+
+This project emphasizes scientific reproducibility:
+- **Fixed Random Seeds**: All random operations use fixed seeds
+- **Version Pinning**: Dependencies are version-pinned
+- **Data Availability**: All data sources are documented
+- **Environment Specification**: Exact environment can be recreated
+
+## 📚 Research Ethics
+
+- Cite all referenced work appropriately
+- Ensure data usage complies with licenses
+- Maintain transparency in methodology
+- Disclose limitations and assumptions
+
+## 🤝 Getting Help
+
+- **Issues**: Use GitHub Issues for bugs and feature requests
+- **Discussions**: Use GitHub Discussions for questions
+- **Email**: Contact maintainer for research collaboration
+
+Thank you for contributing to advancing RAG research! 📊
