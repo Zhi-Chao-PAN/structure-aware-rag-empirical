@@ -4,6 +4,8 @@
 <p align="center"><em>Independent Research</em></p>
 <p align="center">January 2026</p>
 
+> **Evidence note (September 2026):** This is a historical exploratory report. The public question bank contains 30 items; the result table below reports **8 scored items with partial credit**. Per-answer result and scoring CSVs are not committed, so the aggregate cannot be independently recomputed from this checkout alone. The result table has been preserved, and this documentation correction does not represent a new experiment.
+
 ---
 
 ## Abstract
@@ -12,7 +14,7 @@
 
 **Proposed Method.** We propose a **Layout-Aware Parsing Pipeline** that leverages **Vision-Language Model (VLM) based document parsing** to extract source PDFs into **Markdown-serialized** text, explicitly preserving tabular structure as machine-readable Markdown tables. This representation is then chunked and indexed using standard dense retrieval.
 
-**Results.** Evaluated on a curated benchmark derived from the NVIDIA FY2024 10-K filing (N=30 QA pairs), our Layout-Aware pipeline achieved an overall accuracy of **68.8%** (preliminary), representing a **+37.5% relative improvement** over the Unstructured Baseline. A detailed failure mode analysis reveals that the remaining errors are attributable to three distinct categories: Retrieval Failure (33%), Generation Error (33%), and Semantic Ambiguity in the embedding model (33%). This analysis suggests that layout-aware parsing is a *necessary but not sufficient* condition for reliable Financial RAG; future work must integrate more nuanced retrieval techniques.
+**Results.** The historical 8-item summary reports a mean score of **68.8%** (5.5/8, including partial credit), compared with **50.0%** (4/8) for the unstructured baseline. The corresponding relative score change is **+37.5%** before rounding. These values are preliminary, are not a completed evaluation of the 30-question bank, and do not establish statistical significance. Three discussed failure cases concern retrieval, generation, and semantic ambiguity; they illustrate possible next steps rather than a general error distribution.
 
 ---
 
@@ -61,16 +63,19 @@ The **independent variable** is the **document parsing strategy**:
 ### 2.2 Benchmark Dataset
 
 -   **Source Document**: [NVIDIA Corporation FY2024 Annual Report (Form 10-K)](https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm) — a document characterized by complex multi-column tables and dense numerical data.
--   **Evaluation Set**: 30 curated QA pairs spanning two task types:
-    -   **Simple Lookup** (15 questions): Direct extraction of a single value (e.g., "What was the Total Revenue for FY2024?").
-    -   **Cross-Column Comparison** (15 questions): Reasoning requiring comparison across multiple cells (e.g., "Did Operating Income increase from 2023 to 2024, and by how much?").
+-   **Public Question Bank**: [30 curated QA pairs](../data/benchmark/golden_dataset.csv) spanning two task types:
+    -   **Simple Lookup** (20 questions): Direct extraction of a value or statement.
+    -   **Cross-Column Comparison** (10 questions): Comparison across values or cells.
+-   **Reported Evaluation**: The aggregate in Section 3 uses 8 items. The repository does not include the per-answer scoring records needed to verify the exact subset or recompute the result.
 
 ### 2.3 Evaluation Metrics
 
 | Metric | Definition |
 |:---|:---|
-| **Accuracy (Exact Match)** | A response is scored `1.0` if the extracted numerical value matches the ground truth within a ±1% tolerance. Partial credit (`0.5`) is awarded for correct methodology leading to a close but inexact answer. All other responses are scored `0.0`. |
+| **Mean score, including partial credit** | The historical report describes `1.0` for a numerical answer within ±1%, `0.5` for correct methodology with a close but inexact answer, and `0.0` otherwise. Because partial credit is included, this is not a binary exact-match accuracy metric. |
 | **Latency** | End-to-end wall-clock time from query submission to final answer (in seconds). |
+
+The bundled [`auto_score.py`](../src/evaluation/auto_score.py) uses number/token matching and partial matches; it does not implement the report's stated ±1% rubric. Its output requires manual review. A reproducible rerun needs one documented scoring protocol and retained per-answer records.
 
 ---
 
@@ -78,15 +83,15 @@ The **independent variable** is the **document parsing strategy**:
 
 ### 3.1 Aggregate Performance
 
-**Table 2: Main Results Summary**
+**Table 2: Historical Results Summary (8 scored items; values preserved)**
 
-| Pipeline | Overall Accuracy | Simple Lookup | Cross-Column | Avg. Latency (s) |
+| Pipeline | Mean Score | Simple Lookup | Cross-Column | Avg. Latency (s) |
 |:---|:---:|:---:|:---:|:---:|
 | **Unstructured Baseline** | 50.0% (4/8) | 50.0% | 50.0% | 89.4 |
 | **Layout-Aware (Proposed)** | **68.8%** (5.5/8) | **75.0%** | **62.5%** | 88.4 |
 | **Δ (Relative Improvement)** | **+37.5%** | +50.0% | +25.0% | -1.1% |
 
-The Layout-Aware pipeline demonstrates statistically and practically significant improvement on Simple Lookup tasks, confirming that structure preservation directly aids direct value extraction. The improvement on Cross-Column tasks is more modest, suggesting that multi-hop reasoning remains a challenge.
+The reported scores are higher for layout-aware parsing in this small evaluation. Without the per-answer records, repeated runs, or a statistical analysis, the table supports a descriptive historical comparison only. It does not establish significance or performance across the full question bank or other documents.
 
 ### 3.2 Visual Summary
 
@@ -95,17 +100,17 @@ The Layout-Aware pipeline demonstrates statistically and practically significant
   <img src="latency_distribution.png" width="48%" alt="Latency Distribution">
 </p>
 
-*Figure 1: (Left) Accuracy comparison by pipeline. (Right) Per-question latency distribution. Notably, the Layout-Aware pipeline incurs **no significant latency overhead** compared to the baseline.*
+*Figure 1: Historical score and latency charts retained from the original report. These are not evidence of a fresh run or a statistical latency comparison; the original per-answer records are not committed.*
 
 ---
 
 ## 4. Failure Mode Analysis
 
-The most critical contribution of this study is not the accuracy gain, but the **systematic analysis of the remaining 31.2% of errors** in the Layout-Aware pipeline. Understanding *why* a system fails is often more valuable than knowing *that* it succeeded. We categorize the three failures as follows:
+The report discusses three cases that did not receive full credit, including one partial-credit answer. These case counts are different from the score shortfall: the 5.5/8 score leaves a 31.25% score shortfall, not a 31.25% binary error rate. The descriptions below are preserved as qualitative failure analysis; the original answers are not committed for independent review.
 
 ### 4.1 Error Taxonomy
 
-**Table 3: Failure Mode Breakdown (N=3 errors in Proposed Pipeline)**
+**Table 3: Three Reported Failure Cases (including one partial-credit answer)**
 
 | Question ID | Task Type | Failure Mode | Root Cause |
 |:---|:---|:---|:---|
@@ -129,7 +134,7 @@ This analysis yields three actionable insights:
 
 ### 5.1 Generalizability
 
-The primary limitation of this study is the reliance on a **single-document benchmark** (NVIDIA FY2024 10-K). While the findings are internally consistent, they may not generalize to documents with different formatting conventions (e.g., handwritten annotations, multi-lingual reports, or highly irregular table structures). Future work should expand the benchmark to include 5-10 diverse financial reports (e.g., Apple, Tesla, Berkshire Hathaway) to establish broader validity.
+The study uses a **single document** (NVIDIA FY2024 10-K), and the historical aggregate covers only 8 scored items. Missing per-answer records and differing manual/automatic scoring rules further limit independent verification. Before extending conclusions to other reports, a follow-up should reconcile the scoring protocol, retain raw answers and scores, evaluate the full public bank, and then add diverse documents.
 
 ### 5.2 Baseline Strength
 
@@ -143,12 +148,12 @@ This study utilizes LlamaParse, a commercial API, as the VLM-based parser. We de
 
 ## 6. Conclusion
 
-This empirical study provides evidence that **layout-aware parsing significantly improves RAG performance on financial documents** by bridging the Structure-Gap. By serializing tables into Markdown, we achieved a 37.5% relative improvement in accuracy on a targeted benchmark. More importantly, our detailed failure mode analysis reveals that layout-aware parsing is a *necessary but not sufficient* condition: complementary advances in retrieval (for recall), generation (for precision arithmetic), and embedding (for semantic nuance) are required for production-grade Financial RAG.
+This exploratory project compares plain-text and Markdown-aware parsing for financial RAG. The preserved 8-item summary reports higher partial-credit scores for the latter, while the case analysis highlights retrieval misses, unit handling, and ambiguity between financial terms. A documented rerun with retained per-answer evidence is needed before claiming performance over the 30-question bank or wider financial documents.
 
 **Key Takeaways:**
-1.  **Structure matters.** Unstructured text extraction is fundamentally inadequate for tabular data.
-2.  **Markdown is a powerful representation.** It is both human-readable and LLM-friendly.
-3.  **Failed cases are informative.** The 31.2% error rate is not a ceiling but a roadmap for improvement.
+1.  **Preserve table relationships.** Markdown tables provide an explicit representation to evaluate against plain-text extraction.
+2.  **Inspect the whole pipeline.** Parsing, retrieval, and answer generation can each introduce failures.
+3.  **Keep evidence with results.** Record the question subset, answers, scoring rules, and execution conditions when reporting a benchmark.
 
 ---
 

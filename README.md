@@ -4,22 +4,19 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Docker](https://img.shields.io/badge/Docker-Supported-blue?logo=docker&logoColor=white)](Dockerfile)
 [![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Evaluation](https://img.shields.io/badge/Evaluation-Human_Verified-success)](report/README.md)
-[![Accuracy Lift](https://img.shields.io/badge/Accuracy_Lift-%2B37.5%25-brightgreen)](report/README.md)
 [![Framework](https://img.shields.io/badge/Framework-LlamaIndex-orange)](https://www.llamaindex.ai/)
 [![GitHub stars](https://img.shields.io/github/stars/Zhi-Chao-PAN/structure-aware-rag-empirical)](https://github.com/Zhi-Chao-PAN/structure-aware-rag-empirical/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/Zhi-Chao-PAN/structure-aware-rag-empirical)](https://github.com/Zhi-Chao-PAN/structure-aware-rag-empirical/issues)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue)](https://huggingface.co/Zhi-Chao-PAN)
-[![arXiv](https://img.shields.io/badge/arXiv-2502.12345-b31b1b.svg)](https://arxiv.org/abs/2502.12345)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.123457.svg)](https://doi.org/10.5281/zenodo.123457)
 
-> 🚀 **Research Breakthrough**: Structure-aware parsing recovers **100% tabular information** and boosts financial RAG accuracy by **+37.5%** (50.0% → 68.8%)
+An exploratory comparison of plain-text and Markdown-aware parsing for financial-document RAG, with a public question bank and an analysis of retrieval and answer failures.
+
+> **Evidence scope:** The repository contains 30 questions from one NVIDIA annual report. The historical results below summarize **8 scored items**, with partial credit; they are not a completed 30-question evaluation. Per-answer result and scoring CSVs are not committed, so the reported values cannot be independently recomputed from this checkout alone. No new benchmark was run for this documentation correction.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Research%20Area-LLM%20%2B%20RAG-blueviolet" alt="Research Area">
   <img src="https://img.shields.io/badge/Domain-Financial%20Document%20Analysis-important" alt="Domain">
   <img src="https://img.shields.io/badge/Application-AI%20for%20Finance-success" alt="Application">
-  <img src="https://img.shields.io/badge/Impact-Industry%20Ready-yellow" alt="Impact">
 </p>
 
 ---
@@ -41,11 +38,11 @@
 
 ## ⚡ Executive Summary
 
-**Problem**: Standard RAG (Retrieval-Augmented Generation) pipelines notoriously fail on semi-structured data such as tables, leading to severe hallucinations in financial reasoning tasks.
+**Problem**: Flattening financial tables into plain text can obscure row and column relationships needed for retrieval and numerical reasoning.
 
 **Solution**: This project implements a **Structure-Aware Parsing Pipeline** using Markdown-based document representation and compares it against a **Naive Baseline** using unstructured text extraction.
 
-**Key Finding**: Replacing unstructured chunking with Markdown-aware parsing **recovered 100% of information in tabular lookup tasks** (0% → 100%) and improved overall reasoning accuracy by **+37.5%**, proving that *format, not just content, is King in Financial RAG*.
+**What this study covers**: An A/B parsing pipeline, a 30-question bank, and a preliminary 8-item result summary. The reported examples motivate preserving table structure while also examining retrieval failures, unit handling, and ambiguity between related financial terms. They do not establish general accuracy or production readiness.
 
 > 📄 **[Read the Full Technical Report →](report/README.md)**
 
@@ -64,23 +61,22 @@ This creates what we term the **"Structure-Gap"** — a fundamental mismatch bet
 <details>
 <summary>🔍 Click to see why Naive RAG fails on tables</summary>
 
-**PyPDF2 (Baseline) Output:**
+The following is an illustrative representation, not a retained raw parser output.
+
+**Plain-text representation:**
 ```text
 Consolidated Statements of Income Year Ended Jan 28 2024 Jan 29 2023 
-Revenue $60,922 $26,974 Cost of revenue 17,509 11,623 Gross profit 
-43,413 15,351 Operating expenses Research and development 8,675 7,339...
+Revenue $60,922 $26,974 ...
 ```
 > ⚠️ *Columns are merged, numbers lose alignment, headers detached from values*
 
-**LlamaParse (Proposed) Output:**
+**Markdown table representation:**
 ```markdown
 | Year Ended | Jan 28, 2024 | Jan 29, 2023 |
 | :--- | ---: | ---: |
 | **Revenue** | **$60,922** | **$26,974** |
-| Cost of revenue | 17,509 | 11,623 |
-| **Gross profit** | **43,413** | **15,351** |
 ```
-> ✅ *Perfect column alignment preserved, enabling accurate cross-column comparison*
+> The table representation makes the year-to-value relationship explicit.
 
 </details>
 
@@ -120,12 +116,12 @@ graph TD
 | **Document Parsing** | PyPDF2 (Unstructured Text) | **LlamaParse (Markdown Structure)** |
 | **Vector Indexing** | Dense Vector Index (BGE-Large) | Dense Vector Index (BGE-Large) |
 | **LLM Reasoning** | DeepSeek-R1 8B (Local) | DeepSeek-R1 8B (Local) |
-| **Evaluation** | Human-in-the-loop (N=30) | Human-in-the-loop (N=30) |
+| **Reported evaluation** | 8 scored items, partial credit | 8 scored items, partial credit |
 
 ### Dataset
-- **Source**: [NVIDIA Corporation Fiscal Year 2024 Annual Report (10-K Filing)](https://investor.nvidia.com/financial-info/sec-filings/default.aspx) | [Direct PDF](https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm)
-- **Focus**: Consolidated Statements of Income (Pages 34-36)
-- **Benchmark**: 30 curated questions spanning Simple Lookup and Cross-Column Comparison tasks
+- **Source**: [NVIDIA Corporation Fiscal Year 2024 Annual Report (10-K Filing)](https://investor.nvidia.com/financial-info/sec-filings/default.aspx) | [SEC filing](https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/nvda-20240128.htm)
+- **Focus**: Financial tables and related numerical disclosures
+- **Question bank**: [30 curated questions](data/benchmark/golden_dataset.csv): 20 Simple Lookup and 10 Cross-Column Comparison items. This is the available bank, not the denominator of the historical results.
 
 ---
 
@@ -136,19 +132,23 @@ graph TD
   <img src="report/latency_distribution.png" width="45%" alt="Latency Distribution">
 </p>
 
-| Metric | Baseline | Proposed | Improvement |
-|--------|----------|----------|-------------|
-| **Overall Accuracy** | 50.0% | 68.8% | +37.5% (relative) |
-| **Revenue Lookup** | ❌ **0%** | ✅ **100%** | 🚀 Critical Fix |
-| **Cross-Column Tasks** | Partial | Full | Significant |
-| **Avg. Latency** | ~45s | ~47s | Negligible overhead |
+These historical values are preserved from the [technical report](report/README.md#31-aggregate-performance). The denominator is 8 items and the score includes half credit; this is not a binary exact-match accuracy result for the full question bank.
 
-> 📏 *Accuracy measured by strict numerical matching (±1% tolerance) or semantic equivalence verified by human evaluation (N=30 questions).*
+| Metric | Baseline | Proposed |
+|--------|----------|----------|
+| **Mean score, including partial credit** | 50.0% (4/8) | 68.8% (5.5/8) |
+| **Simple Lookup score** | 50.0% | 75.0% |
+| **Cross-Column score** | 50.0% | 62.5% |
+| **Avg. Latency (reported)** | 89.4s | 88.4s |
+
+The original relative score change is +37.5%, calculated from 4/8 and 5.5/8 before rounding. It is a descriptive result for this small historical evaluation, not evidence of statistical significance or generalization.
+
+The report describes manual scoring with a ±1% numerical tolerance and partial credit. The bundled automatic scorer uses number/token matching and is not an implementation of that same rubric; its output requires manual review. Per-answer records and a reconciled scoring protocol are needed before claiming a reproducible result over all 30 questions. The charts above are historical report artifacts, not a fresh verification run.
 
 ### Key Insights
-1. **Structure Preservation is Critical**: The baseline completely failed on revenue lookup tasks due to destroyed table alignment.
-2. **Latency Trade-off is Minimal**: The ~2s additional latency is negligible for batch processing scenarios.
-3. **Semantic Ambiguity Persists**: Fine-grained distinctions (e.g., "Basic" vs. "Diluted" EPS) still require advanced retrieval techniques.
+1. **Parsing is one part of the pipeline**: Preserving table structure can help retrieval and interpretation, but it does not resolve every failure mode.
+2. **Evidence remains preliminary**: The published aggregate covers 8 scored items from one document; a larger, documented evaluation is needed.
+3. **Failure analysis guides next steps**: The report discusses retrieval misses, unit confusion, and ambiguity between "Basic" and "Diluted" EPS.
 
 ---
 
@@ -159,14 +159,14 @@ graph TD
 | **Fault Tolerance** | Implemented `SafeMode` with incremental checkpointing ([run_comparison.py](src/experiments/run_comparison.py)) |
 | **Resource Management** | Aggressive GPU memory garbage collection for consumer-grade hardware ([hardware_config.py](config/hardware_config.py)) |
 | **Async Processing** | Asyncio-based concurrent evaluation with configurable parallelism |
-| **Reproducibility** | Full datasets, evaluation scripts, and configuration files provided |
+| **Reproduction materials** | Question bank, evaluation scripts, and configuration files provided; historical per-answer result CSVs are not committed |
 
 ---
 
 ## 📁 Project Structure
 
 ```
-structure-aware-rag-study/
+structure-aware-rag-empirical/
 ├── src/
 │   ├── parsing/           # Document parsing pipelines
 │   │   └── generate_datasets.py
@@ -185,7 +185,7 @@ structure-aware-rag-study/
 │   ├── benchmark/         # Golden dataset (Q&A pairs)
 │   ├── parsed/            # Parsed outputs (gitignored)
 │   └── chroma_db/         # Vector index (gitignored)
-├── experiments/           # Experiment results
+├── experiments/           # Generated locally; historical CSVs are not committed
 │   ├── comparison_results.csv
 │   └── scored_results.csv
 ├── report/                # Technical report & visualizations
@@ -216,8 +216,8 @@ structure-aware-rag-study/
 
 2.  **Clone Repository**
     ```bash
-    git clone https://github.com/Zhi-Chao-PAN/structure-aware-rag-study.git
-    cd structure-aware-rag-study
+    git clone https://github.com/Zhi-Chao-PAN/structure-aware-rag-empirical.git
+    cd structure-aware-rag-empirical
     ```
 
 3.  **Install Dependencies**
@@ -289,10 +289,8 @@ This project showcases proficiency in:
 
 ### 📬 Contact Information
 - **Author**: Zhichao Pan
-- **Email**: zhichao.pan@example.com
-- **LinkedIn**: [ZhiChao Pan](https://linkedin.com/in/zhichao-pan)
+- **Website & contact**: [panzhichao.com](https://www.panzhichao.com)
 - **GitHub**: [@Zhi-Chao-PAN](https://github.com/Zhi-Chao-PAN)
-- **Twitter**: [@ZhiChao_PAN](https://twitter.com/ZhiChao_PAN)
 
 ### 🗣️ Community Engagement
 - **Issues**: [Report bugs or request features](https://github.com/Zhi-Chao-PAN/structure-aware-rag-empirical/issues)
@@ -307,7 +305,7 @@ If this research helps you, please give it a star! ⭐
 
 ## 📝 Citation
 
-If you find this research useful, please cite it:
+If you use this repository, cite the software and include the commit you used. This project does not claim a linked arXiv publication or a verified DOI.
 
 ```bibtex
 @misc{pan2026structureaware,
@@ -315,17 +313,7 @@ If you find this research useful, please cite it:
   title = {Structure-Aware RAG: An Empirical Study on Financial Document Parsing},
   year = {2026},
   publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/Zhi-Chao-PAN/structure-aware-rag-empirical}},
-  doi = {10.5281/zenodo.123457}
-}
-
-@article{pan2026structureawarerag,
-  author = {Pan, Zhichao},
-  title = {Structure-Aware Parsing for Financial Document RAG: A +37.5% Accuracy Boost},
-  journal = {arXiv preprint},
-  year = {2026},
-  arxiv = {2502.12345}
+  howpublished = {\url{https://github.com/Zhi-Chao-PAN/structure-aware-rag-empirical}}
 }
 ```
 
@@ -344,5 +332,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <p align="center">
   Made with ❤️ by <a href="https://github.com/Zhi-Chao-PAN">ZhiChao Pan</a> | 
   <a href="https://github.com/Zhi-Chao-PAN/structure-aware-rag-empirical">View on GitHub</a> |
-  <a href="https://arxiv.org/abs/2502.12345">Read the Paper</a>
+  <a href="report/README.md">Read the Technical Report</a>
 </p>

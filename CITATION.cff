@@ -6,7 +6,7 @@ authors:
 title: "Structure-Aware RAG: An Empirical Study on Financial Document Parsing"
 version: 1.0.0
 date-released: 2026-01-28
-url: "https://github.com/Zhi-Chao-PAN/structure-aware-rag-study"
+url: "https://github.com/Zhi-Chao-PAN/structure-aware-rag-empirical"
 preferred-citation:
   type: generic
   authors:
