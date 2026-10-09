@@ -1,0 +1,698 @@
+[
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2022",
+    "quarter": "Q3",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2022_Q3_10-Q_p004",
+      "ticker": "AAPL",
+      "page_num": 4,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2022_Q3_10-Q_p004.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2022_Q3_10-Q_p003",
+      "ticker": "MSFT",
+      "page_num": 3,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2022_Q3_10-Q_p003.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2022",
+    "quarter": "Q3",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2022_Q3_10-Q_p004",
+      "ticker": "AAPL",
+      "page_num": 4,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2022_Q3_10-Q_p004.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2022_Q3_10-Q_p005",
+      "ticker": "MSFT",
+      "page_num": 5,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2022_Q3_10-Q_p005.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2022",
+    "quarter": "Q3",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2022_Q3_10-Q_p007",
+      "ticker": "AAPL",
+      "page_num": 7,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2022_Q3_10-Q_p007.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2022_Q3_10-Q_p003",
+      "ticker": "MSFT",
+      "page_num": 3,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2022_Q3_10-Q_p003.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2022",
+    "quarter": "Q3",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2022_Q3_10-Q_p007",
+      "ticker": "AAPL",
+      "page_num": 7,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2022_Q3_10-Q_p007.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2022_Q3_10-Q_p005",
+      "ticker": "MSFT",
+      "page_num": 5,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2022_Q3_10-Q_p005.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2022",
+    "quarter": "annual",
+    "report_type": "10-K",
+    "page_1": {
+      "page_id": "AAPL_FY2022_annual_10-K_p021",
+      "ticker": "AAPL",
+      "page_num": 21,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2022_annual_10-K_p021.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2022_annual_10-K_p015",
+      "ticker": "MSFT",
+      "page_num": 15,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2022_annual_10-K_p015.jpg"
+    },
+    "text_overlap_keywords": [
+      "Revenue"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2022",
+    "quarter": "annual",
+    "report_type": "10-K",
+    "page_1": {
+      "page_id": "AAPL_FY2022_annual_10-K_p021",
+      "ticker": "AAPL",
+      "page_num": 21,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2022_annual_10-K_p021.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2022_annual_10-K_p023",
+      "ticker": "MSFT",
+      "page_num": 23,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2022_annual_10-K_p023.jpg"
+    },
+    "text_overlap_keywords": [
+      "Revenue"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2022",
+    "quarter": "annual",
+    "report_type": "10-K",
+    "page_1": {
+      "page_id": "AAPL_FY2022_annual_10-K_p021",
+      "ticker": "AAPL",
+      "page_num": 21,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2022_annual_10-K_p021.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2022_annual_10-K_p024",
+      "ticker": "MSFT",
+      "page_num": 24,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2022_annual_10-K_p024.jpg"
+    },
+    "text_overlap_keywords": [
+      "Revenue"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2023",
+    "quarter": "Q1",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2023_Q1_10-Q_p004",
+      "ticker": "AAPL",
+      "page_num": 4,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2023_Q1_10-Q_p004.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2023_Q1_10-Q_p003",
+      "ticker": "MSFT",
+      "page_num": 3,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2023_Q1_10-Q_p003.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2023",
+    "quarter": "Q1",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2023_Q1_10-Q_p004",
+      "ticker": "AAPL",
+      "page_num": 4,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2023_Q1_10-Q_p004.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2023_Q1_10-Q_p005",
+      "ticker": "MSFT",
+      "page_num": 5,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2023_Q1_10-Q_p005.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2023",
+    "quarter": "Q1",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2023_Q1_10-Q_p007",
+      "ticker": "AAPL",
+      "page_num": 7,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2023_Q1_10-Q_p007.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2023_Q1_10-Q_p003",
+      "ticker": "MSFT",
+      "page_num": 3,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2023_Q1_10-Q_p003.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2023",
+    "quarter": "Q1",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2023_Q1_10-Q_p007",
+      "ticker": "AAPL",
+      "page_num": 7,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2023_Q1_10-Q_p007.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2023_Q1_10-Q_p005",
+      "ticker": "MSFT",
+      "page_num": 5,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2023_Q1_10-Q_p005.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2023",
+    "quarter": "annual",
+    "report_type": "10-K",
+    "page_1": {
+      "page_id": "AAPL_FY2023_annual_10-K_p012",
+      "ticker": "AAPL",
+      "page_num": 12,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2023_annual_10-K_p012.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2023_annual_10-K_p016",
+      "ticker": "MSFT",
+      "page_num": 16,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2023_annual_10-K_p016.jpg"
+    },
+    "text_overlap_keywords": [
+      "Revenue"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2023",
+    "quarter": "annual",
+    "report_type": "10-K",
+    "page_1": {
+      "page_id": "AAPL_FY2023_annual_10-K_p012",
+      "ticker": "AAPL",
+      "page_num": 12,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2023_annual_10-K_p012.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2023_annual_10-K_p024",
+      "ticker": "MSFT",
+      "page_num": 24,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2023_annual_10-K_p024.jpg"
+    },
+    "text_overlap_keywords": [
+      "Revenue"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2023",
+    "quarter": "annual",
+    "report_type": "10-K",
+    "page_1": {
+      "page_id": "AAPL_FY2023_annual_10-K_p012",
+      "ticker": "AAPL",
+      "page_num": 12,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2023_annual_10-K_p012.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2023_annual_10-K_p025",
+      "ticker": "MSFT",
+      "page_num": 25,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2023_annual_10-K_p025.jpg"
+    },
+    "text_overlap_keywords": [
+      "Revenue"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2024",
+    "quarter": "Q1",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2024_Q1_10-Q_p004",
+      "ticker": "AAPL",
+      "page_num": 4,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2024_Q1_10-Q_p004.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2024_Q1_10-Q_p003",
+      "ticker": "MSFT",
+      "page_num": 3,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2024_Q1_10-Q_p003.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2024",
+    "quarter": "Q1",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2024_Q1_10-Q_p004",
+      "ticker": "AAPL",
+      "page_num": 4,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2024_Q1_10-Q_p004.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2024_Q1_10-Q_p006",
+      "ticker": "MSFT",
+      "page_num": 6,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2024_Q1_10-Q_p006.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2024",
+    "quarter": "Q1",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2024_Q1_10-Q_p007",
+      "ticker": "AAPL",
+      "page_num": 7,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2024_Q1_10-Q_p007.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2024_Q1_10-Q_p003",
+      "ticker": "MSFT",
+      "page_num": 3,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2024_Q1_10-Q_p003.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2024",
+    "quarter": "Q1",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2024_Q1_10-Q_p007",
+      "ticker": "AAPL",
+      "page_num": 7,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2024_Q1_10-Q_p007.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2024_Q1_10-Q_p006",
+      "ticker": "MSFT",
+      "page_num": 6,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2024_Q1_10-Q_p006.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2024",
+    "quarter": "Q2",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2024_Q2_10-Q_p004",
+      "ticker": "AAPL",
+      "page_num": 4,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2024_Q2_10-Q_p004.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2024_Q2_10-Q_p003",
+      "ticker": "MSFT",
+      "page_num": 3,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2024_Q2_10-Q_p003.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2024",
+    "quarter": "Q2",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2024_Q2_10-Q_p004",
+      "ticker": "AAPL",
+      "page_num": 4,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2024_Q2_10-Q_p004.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2024_Q2_10-Q_p006",
+      "ticker": "MSFT",
+      "page_num": 6,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2024_Q2_10-Q_p006.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2024",
+    "quarter": "Q2",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2024_Q2_10-Q_p007",
+      "ticker": "AAPL",
+      "page_num": 7,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2024_Q2_10-Q_p007.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2024_Q2_10-Q_p003",
+      "ticker": "MSFT",
+      "page_num": 3,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2024_Q2_10-Q_p003.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2024",
+    "quarter": "Q2",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2024_Q2_10-Q_p007",
+      "ticker": "AAPL",
+      "page_num": 7,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2024_Q2_10-Q_p007.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2024_Q2_10-Q_p006",
+      "ticker": "MSFT",
+      "page_num": 6,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2024_Q2_10-Q_p006.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2024",
+    "quarter": "Q3",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2024_Q3_10-Q_p004",
+      "ticker": "AAPL",
+      "page_num": 4,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2024_Q3_10-Q_p004.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2024_Q3_10-Q_p003",
+      "ticker": "MSFT",
+      "page_num": 3,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2024_Q3_10-Q_p003.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2024",
+    "quarter": "Q3",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2024_Q3_10-Q_p004",
+      "ticker": "AAPL",
+      "page_num": 4,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2024_Q3_10-Q_p004.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2024_Q3_10-Q_p006",
+      "ticker": "MSFT",
+      "page_num": 6,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2024_Q3_10-Q_p006.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2024",
+    "quarter": "Q3",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2024_Q3_10-Q_p007",
+      "ticker": "AAPL",
+      "page_num": 7,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2024_Q3_10-Q_p007.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2024_Q3_10-Q_p003",
+      "ticker": "MSFT",
+      "page_num": 3,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2024_Q3_10-Q_p003.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2024",
+    "quarter": "Q3",
+    "report_type": "10-Q",
+    "page_1": {
+      "page_id": "AAPL_FY2024_Q3_10-Q_p007",
+      "ticker": "AAPL",
+      "page_num": 7,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2024_Q3_10-Q_p007.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2024_Q3_10-Q_p006",
+      "ticker": "MSFT",
+      "page_num": 6,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2024_Q3_10-Q_p006.jpg"
+    },
+    "text_overlap_keywords": [
+      "Net income"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2024",
+    "quarter": "annual",
+    "report_type": "10-K",
+    "page_1": {
+      "page_id": "AAPL_FY2024_annual_10-K_p020",
+      "ticker": "AAPL",
+      "page_num": 20,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2024_annual_10-K_p020.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2024_annual_10-K_p036",
+      "ticker": "MSFT",
+      "page_num": 36,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2024_annual_10-K_p036.jpg"
+    },
+    "text_overlap_keywords": [
+      "Revenue"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2024",
+    "quarter": "annual",
+    "report_type": "10-K",
+    "page_1": {
+      "page_id": "AAPL_FY2024_annual_10-K_p020",
+      "ticker": "AAPL",
+      "page_num": 20,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2024_annual_10-K_p020.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2024_annual_10-K_p047",
+      "ticker": "MSFT",
+      "page_num": 47,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2024_annual_10-K_p047.jpg"
+    },
+    "text_overlap_keywords": [
+      "Revenue"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  },
+  {
+    "probe_type": "B",
+    "description": "Text-Similar Cross-Company (Visual-Divergent)",
+    "fiscal_year": "2024",
+    "quarter": "annual",
+    "report_type": "10-K",
+    "page_1": {
+      "page_id": "AAPL_FY2024_annual_10-K_p020",
+      "ticker": "AAPL",
+      "page_num": 20,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2024_annual_10-K_p020.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2024_annual_10-K_p059",
+      "ticker": "MSFT",
+      "page_num": 59,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2024_annual_10-K_p059.jpg"
+    },
+    "text_overlap_keywords": [
+      "Revenue"
+    ],
+    "ssim": 0.0,
+    "note": "SSIM < 0.2 but text-content shares financial keywords; Vision-RAG must not confuse"
+  }
+]

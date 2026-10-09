@@ -32,9 +32,6 @@ import torch.nn as nn
 from torch.utils.data import DataLoader, Dataset
 from torch.optim.lr_scheduler import LambdaLR
 
-# EMERGENCY DEBUG: 开启全局异常检测记录，追踪 NaN 物理来源
-torch.autograd.set_detect_anomaly(True)
-
 # 本地模块
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
@@ -180,6 +177,7 @@ def train(config: VisionRAGConfig, args):
     except ImportError:
         print("[INFO] accelerate 未安装, 使用原生 PyTorch 训练")
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        accelerator = None
         use_accelerate = False
 
     print(f"设备: {device}")
@@ -241,6 +239,11 @@ def train(config: VisionRAGConfig, args):
             {"params": tau_params, "lr": config.train.lr * 5.0, "name": "temperature"},  # τ 5x lr
         )
 
+    # Gradient checkpointing activation for 24GB VRAM
+    if hasattr(model.backbone, "model") and hasattr(model.backbone.model, "gradient_checkpointing_enable"):
+        model.backbone.model.gradient_checkpointing_enable()
+        print("[INFO] 启用 Backbone Gradient Checkpointing 以适配 24GB VRAM")
+
     # 只在 backbone 未冻结时加入 optimizer
     if not model.freeze_backbone:
         trainable_params.append(
@@ -253,7 +256,14 @@ def train(config: VisionRAGConfig, args):
     )
 
     # ---- DataLoader ----
-    collator = VisFinRAGCollator(image_processor=None, mock_mode=args.mock)
+    # 真实模式下获取 ColPali processor 用于图像预处理
+    image_processor = None
+    if not args.mock:
+        raw_model = model.module if hasattr(model, 'module') else model
+        if hasattr(raw_model.backbone, 'processor'):
+            image_processor = raw_model.backbone.processor
+
+    collator = VisFinRAGCollator(image_processor=image_processor, mock_mode=args.mock)
 
     if args.mock:
         dataset = MockVisFinRAGDataset(num_samples=max(64, config.data.batch_size * 4))
@@ -357,10 +367,14 @@ def train(config: VisionRAGConfig, args):
 
             # 移动到设备
             if not use_accelerate:
-                batch = {
-                    k: v.to(device) if isinstance(v, torch.Tensor) else v
-                    for k, v in batch.items()
-                }
+                # 注意: batch["images"] 可能是 PIL Image 列表 (真实模式)
+                batch_on_device = {}
+                for k, v in batch.items():
+                    if isinstance(v, torch.Tensor):
+                        batch_on_device[k] = v.to(device)
+                    else:
+                        batch_on_device[k] = v
+                batch = batch_on_device
 
             # ---- Forward: Student ----
             output = model(
@@ -375,7 +389,8 @@ def train(config: VisionRAGConfig, args):
             teacher_scores = None
             if curriculum.lambda_self > 0:
                 # EMERGENCY: 关键修复 —— 教师模型未被 accelerator 包装，需手动开启 autocast 保证精度对齐
-                with torch.no_grad(), torch.autocast(device_type=device.type if hasattr(device, 'type') else 'cuda', dtype=torch.bfloat16):
+                _device_type = accelerator.device.type if use_accelerate else device.type if hasattr(device, 'type') else 'cuda'
+                with torch.no_grad(), torch.autocast(device_type=_device_type, dtype=torch.bfloat16):
                     ema_teacher.model.eval()
                     t_output = ema_teacher.model(
                         images=batch["images"],

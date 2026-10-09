@@ -1,0 +1,3002 @@
+[
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p000",
+    "query": "What was MSFT's total revenue in 2023 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p074",
+    "query": "What were the total operating expenses for MSFT in annual 2023?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p116",
+    "query": "Report the diluted earnings per share for MSFT in 2023 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p020",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p023",
+    "query": "What were the total operating expenses for MSFT in Q1 2023?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p109",
+    "query": "How much cash and cash equivalents did MSFT hold in annual 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p066",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p025",
+    "query": "What were the total operating expenses for MSFT in Q2 2023?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p030",
+    "query": "What was MSFT's total revenue in 2024 Q2?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p099",
+    "query": "What was MSFT's total revenue in 2024 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p011",
+    "query": "Report the diluted earnings per share for MSFT in 2022 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p021",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p010",
+    "query": "What was MSFT's research and development expense in 2023 Q1?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p038",
+    "query": "What was the gross margin for MSFT during 2024 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p030",
+    "query": "How much cash and cash equivalents did MSFT hold in Q1 2025?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p003",
+    "query": "What was the net income for MSFT in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2023_Q1_10-Q_p019",
+    "query": "What was the gross margin for AAPL during 2023 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p114",
+    "query": "How much cash and cash equivalents did MSFT hold in annual 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p035",
+    "query": "What was the gross margin for MSFT during 2024 Q3?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p003",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p081",
+    "query": "What was MSFT's research and development expense in 2023 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p045",
+    "query": "What was the gross margin for MSFT during 2023 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p034",
+    "query": "What were the total operating expenses for MSFT in Q1 2025?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p007",
+    "query": "What was MSFT's research and development expense in 2024 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p099",
+    "query": "How much cash and cash equivalents did MSFT hold in annual 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p081",
+    "query": "What was the gross margin for MSFT during 2022 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p021",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p016",
+    "query": "What was MSFT's research and development expense in 2023 Q2?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p033",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2022_Q1_10-Q_p017",
+    "query": "Report the diluted earnings per share for AAPL in 2022 Q1.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p073",
+    "query": "What was MSFT's total revenue in 2023 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p005",
+    "query": "What was the net income for MSFT in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p044",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p054",
+    "query": "What was MSFT's research and development expense in 2024 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p045",
+    "query": "What were the total operating expenses for MSFT in Q3 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p000",
+    "query": "What was the gross margin for MSFT during 2023 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p040",
+    "query": "Report the diluted earnings per share for MSFT in 2022 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p026",
+    "query": "What was MSFT's total revenue in 2024 Q3?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2023_Q1_10-Q_p010",
+    "query": "What was the gross margin for AAPL during 2023 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p048",
+    "query": "What was the gross margin for MSFT during 2022 Q2?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p009",
+    "query": "How much cash and cash equivalents did MSFT hold in Q2 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p031",
+    "query": "What was the gross margin for MSFT during 2024 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p076",
+    "query": "What was the gross margin for MSFT during 2022 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p025",
+    "query": "What was the net income for MSFT in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p050",
+    "query": "What was the net income for MSFT in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p066",
+    "query": "What was the gross margin for MSFT during 2024 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p116",
+    "query": "What was MSFT's research and development expense in 2023 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p048",
+    "query": "What was MSFT's total revenue in 2023 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p023",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p080",
+    "query": "What was MSFT's total revenue in 2023 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p034",
+    "query": "How much cash and cash equivalents did MSFT hold in Q2 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p027",
+    "query": "What was MSFT's total revenue in 2024 Q1?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p021",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2022_Q3_10-Q_p010",
+    "query": "What was AAPL's research and development expense in 2022 Q3?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p039",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p042",
+    "query": "What was MSFT's research and development expense in 2022 Q3?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p087",
+    "query": "How much cash and cash equivalents did MSFT hold in annual 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p004",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p004",
+    "query": "What was MSFT's total revenue in 2022 Q2?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p017",
+    "query": "What was MSFT's total revenue in 2024 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p012",
+    "query": "What was the gross margin for MSFT during 2022 Q2?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p015",
+    "query": "What were the total operating expenses for MSFT in Q3 2022?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p066",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p013",
+    "query": "What was the net income for MSFT in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p000",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p043",
+    "query": "How much cash and cash equivalents did MSFT hold in annual 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p023",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p061",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q1.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p031",
+    "query": "What was the gross margin for MSFT during 2024 Q3?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p047",
+    "query": "What was the gross margin for MSFT during 2024 Q3?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p025",
+    "query": "What was MSFT's total revenue in 2022 Q3?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p152",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p017",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p036",
+    "query": "What was the gross margin for MSFT during 2023 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p034",
+    "query": "What was MSFT's research and development expense in 2022 Q2?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p035",
+    "query": "Report the diluted earnings per share for MSFT in 2022 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p115",
+    "query": "How much cash and cash equivalents did MSFT hold in annual 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p022",
+    "query": "What was the gross margin for MSFT during 2022 Q2?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p110",
+    "query": "What was MSFT's total revenue in 2023 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2022_annual_10-K_p044",
+    "query": "How much cash and cash equivalents did AAPL hold in annual 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p077",
+    "query": "What were the total operating expenses for MSFT in annual 2022?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2022_annual_10-K_p063",
+    "query": "What was the gross margin for AAPL during 2022 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p043",
+    "query": "What was the net income for MSFT in 2025?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p134",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p072",
+    "query": "What was MSFT's total revenue in 2023 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p012",
+    "query": "What was MSFT's total revenue in 2023 Q2?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p018",
+    "query": "What was MSFT's total revenue in 2023 Q1?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p011",
+    "query": "Report the diluted earnings per share for MSFT in 2022 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p026",
+    "query": "What was MSFT's total revenue in 2024 Q3?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p040",
+    "query": "How much cash and cash equivalents did MSFT hold in Q2 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p005",
+    "query": "How much cash and cash equivalents did MSFT hold in Q2 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p057",
+    "query": "Report the diluted earnings per share for MSFT in 2024 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p030",
+    "query": "What was MSFT's total revenue in 2025 Q1?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p016",
+    "query": "What was MSFT's research and development expense in 2025 Q1?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p075",
+    "query": "How much cash and cash equivalents did MSFT hold in Q2 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p065",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2024_annual_10-K_p061",
+    "query": "What was the gross margin for AAPL during 2024 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p022",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p066",
+    "query": "What was the gross margin for MSFT during 2025 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p101",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p045",
+    "query": "What were the total operating expenses for MSFT in Q3 2023?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p003",
+    "query": "What was MSFT's research and development expense in 2022 Q2?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p061",
+    "query": "What were the total operating expenses for MSFT in annual 2022?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p010",
+    "query": "What was the net income for MSFT in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p023",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p147",
+    "query": "What were the total operating expenses for MSFT in annual 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p010",
+    "query": "How much cash and cash equivalents did MSFT hold in Q2 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p004",
+    "query": "What was MSFT's total revenue in 2022 Q3?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p020",
+    "query": "What was the gross margin for MSFT during 2023 Q2?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p045",
+    "query": "What was the gross margin for MSFT during 2023 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p112",
+    "query": "What was the gross margin for MSFT during 2024 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p022",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p002",
+    "query": "What was the net income for MSFT in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p121",
+    "query": "What were the total operating expenses for MSFT in annual 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2023_annual_10-K_p021",
+    "query": "What was AAPL's research and development expense in 2023 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p016",
+    "query": "What were the total operating expenses for MSFT in Q1 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p002",
+    "query": "Report the diluted earnings per share for MSFT in 2023 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p019",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p104",
+    "query": "What was MSFT's total revenue in 2022 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p042",
+    "query": "What was the gross margin for MSFT during 2022 Q2?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p022",
+    "query": "What was the gross margin for MSFT during 2022 Q3?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p012",
+    "query": "What were the total operating expenses for MSFT in Q2 2023?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p027",
+    "query": "What was MSFT's research and development expense in 2023 Q2?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2023_Q1_10-Q_p019",
+    "query": "What was the net income for AAPL in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p043",
+    "query": "What was MSFT's research and development expense in 2025 Q1?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p022",
+    "query": "What were the total operating expenses for MSFT in Q2 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p021",
+    "query": "What was the gross margin for MSFT during 2023 Q2?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p048",
+    "query": "Report the diluted earnings per share for MSFT in 2022 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p041",
+    "query": "What was MSFT's research and development expense in 2023 Q2?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2024_Q3_10-Q_p022",
+    "query": "What was AAPL's research and development expense in 2024 Q3?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p014",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p048",
+    "query": "What was the gross margin for MSFT during 2024 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p112",
+    "query": "What was the gross margin for MSFT during 2024 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p066",
+    "query": "What were the total operating expenses for MSFT in Q3 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p026",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p015",
+    "query": "What was MSFT's total revenue in 2022 Q2?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p002",
+    "query": "Report the diluted earnings per share for MSFT in 2024 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p065",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p127",
+    "query": "What was MSFT's total revenue in 2024 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p021",
+    "query": "What were the total operating expenses for MSFT in Q3 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p002",
+    "query": "What was MSFT's research and development expense in 2023 Q3?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p097",
+    "query": "What was MSFT's research and development expense in 2024 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2022_annual_10-K_p061",
+    "query": "What was AAPL's research and development expense in 2022 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p015",
+    "query": "Report the diluted earnings per share for MSFT in 2025 Q1.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p016",
+    "query": "Report the diluted earnings per share for MSFT in 2025 Q1.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p034",
+    "query": "What was MSFT's research and development expense in 2025 Q1?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p093",
+    "query": "How much cash and cash equivalents did MSFT hold in annual 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p012",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p014",
+    "query": "What were the total operating expenses for MSFT in Q2 2023?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p100",
+    "query": "Report the diluted earnings per share for MSFT in 2024 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p016",
+    "query": "Report the diluted earnings per share for MSFT in 2025 Q1.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p073",
+    "query": "Report the diluted earnings per share for MSFT in 2023 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p083",
+    "query": "What was MSFT's research and development expense in 2022 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p012",
+    "query": "What was the gross margin for MSFT during 2025 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p062",
+    "query": "What was the net income for MSFT in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p042",
+    "query": "What was the gross margin for MSFT during 2022 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p020",
+    "query": "What was MSFT's research and development expense in 2025 Q1?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p069",
+    "query": "What were the total operating expenses for MSFT in annual 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p000",
+    "query": "What was MSFT's total revenue in 2023 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p097",
+    "query": "What was the gross margin for MSFT during 2024 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p059",
+    "query": "What was MSFT's research and development expense in 2022 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p038",
+    "query": "What was the gross margin for MSFT during 2022 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p001",
+    "query": "What was MSFT's total revenue in 2022 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2023_Q4_10-Q_p000",
+    "query": "How much cash and cash equivalents did AAPL hold in Q4 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p043",
+    "query": "What was MSFT's total revenue in 2025 Q1?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p002",
+    "query": "What was MSFT's research and development expense in 2023 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p010",
+    "query": "How much cash and cash equivalents did MSFT hold in Q1 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p109",
+    "query": "How much cash and cash equivalents did MSFT hold in annual 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p029",
+    "query": "What was MSFT's total revenue in 2022 Q3?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p005",
+    "query": "What was the net income for MSFT in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p087",
+    "query": "How much cash and cash equivalents did MSFT hold in annual 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p026",
+    "query": "What were the total operating expenses for MSFT in Q3 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p134",
+    "query": "What was the gross margin for MSFT during 2024 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p036",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p076",
+    "query": "Report the diluted earnings per share for MSFT in 2022 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p048",
+    "query": "What was the gross margin for MSFT during 2024 Q2?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p072",
+    "query": "What was the gross margin for MSFT during 2023 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p055",
+    "query": "What was the gross margin for MSFT during 2023 Q3?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p021",
+    "query": "What was MSFT's total revenue in 2023 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p112",
+    "query": "How much cash and cash equivalents did MSFT hold in annual 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2023_Q4_10-Q_p000",
+    "query": "What was AAPL's research and development expense in 2023 Q4?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p013",
+    "query": "How much cash and cash equivalents did MSFT hold in Q2 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p017",
+    "query": "What were the total operating expenses for MSFT in Q1 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p021",
+    "query": "What were the total operating expenses for MSFT in Q1 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p014",
+    "query": "What were the total operating expenses for MSFT in Q3 2022?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p105",
+    "query": "What was MSFT's research and development expense in 2022 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p016",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p087",
+    "query": "What was MSFT's research and development expense in 2022 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p080",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p043",
+    "query": "What were the total operating expenses for MSFT in annual 2022?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p044",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p114",
+    "query": "What were the total operating expenses for MSFT in annual 2023?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p031",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p095",
+    "query": "Report the diluted earnings per share for MSFT in 2023 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p014",
+    "query": "What were the total operating expenses for MSFT in Q1 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p097",
+    "query": "What was MSFT's research and development expense in 2024 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p009",
+    "query": "Report the diluted earnings per share for MSFT in 2022 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p010",
+    "query": "What were the total operating expenses for MSFT in Q1 2023?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p074",
+    "query": "Report the diluted earnings per share for MSFT in 2022 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p042",
+    "query": "What was MSFT's total revenue in 2022 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p086",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p015",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p103",
+    "query": "Report the diluted earnings per share for MSFT in 2023 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p158",
+    "query": "What was MSFT's research and development expense in 2024 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p016",
+    "query": "What was the gross margin for MSFT during 2022 Q3?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p061",
+    "query": "What were the total operating expenses for MSFT in annual 2023?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2022_annual_10-K_p042",
+    "query": "Report the diluted earnings per share for AAPL in 2022 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p039",
+    "query": "What were the total operating expenses for MSFT in Q2 2022?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p025",
+    "query": "Report the diluted earnings per share for MSFT in 2022 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p022",
+    "query": "What was the net income for MSFT in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p055",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p062",
+    "query": "What was MSFT's total revenue in 2024 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p016",
+    "query": "How much cash and cash equivalents did MSFT hold in Q2 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p136",
+    "query": "What were the total operating expenses for MSFT in annual 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p028",
+    "query": "What was MSFT's total revenue in 2024 Q1?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p032",
+    "query": "What was MSFT's research and development expense in 2023 Q1?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p096",
+    "query": "What was MSFT's total revenue in 2022 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p004",
+    "query": "What was MSFT's total revenue in 2024 Q2?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p008",
+    "query": "What was MSFT's total revenue in 2024 Q3?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p016",
+    "query": "What was the gross margin for MSFT during 2024 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p014",
+    "query": "What was MSFT's research and development expense in 2023 Q1?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p033",
+    "query": "What was MSFT's research and development expense in 2024 Q2?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p014",
+    "query": "How much cash and cash equivalents did MSFT hold in Q1 2025?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p023",
+    "query": "What was MSFT's total revenue in 2025 Q1?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p010",
+    "query": "What was MSFT's total revenue in 2023 Q2?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p009",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p083",
+    "query": "How much cash and cash equivalents did MSFT hold in annual 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p023",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p112",
+    "query": "What was MSFT's total revenue in 2022 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p099",
+    "query": "What was the net income for MSFT in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p049",
+    "query": "What were the total operating expenses for MSFT in Q3 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p049",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p028",
+    "query": "Report the diluted earnings per share for MSFT in 2024 Q1.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p011",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2024_annual_10-K_p051",
+    "query": "How much cash and cash equivalents did AAPL hold in annual 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p014",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q1.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p065",
+    "query": "What was MSFT's total revenue in 2023 Q2?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p013",
+    "query": "What was the gross margin for MSFT during 2024 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p027",
+    "query": "What was the gross margin for MSFT during 2024 Q2?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p112",
+    "query": "Report the diluted earnings per share for MSFT in 2023 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p158",
+    "query": "What was MSFT's total revenue in 2024 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p020",
+    "query": "Report the diluted earnings per share for MSFT in 2022 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p087",
+    "query": "What were the total operating expenses for MSFT in annual 2023?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2024_annual_10-K_p061",
+    "query": "What was the gross margin for AAPL during 2024 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p018",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p014",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p017",
+    "query": "What was the gross margin for MSFT during 2023 Q2?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p116",
+    "query": "How much cash and cash equivalents did MSFT hold in annual 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p027",
+    "query": "What was MSFT's research and development expense in 2023 Q3?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p134",
+    "query": "What was the gross margin for MSFT during 2024 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p076",
+    "query": "What was MSFT's research and development expense in 2023 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p006",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p043",
+    "query": "What was the net income for MSFT in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p068",
+    "query": "Report the diluted earnings per share for MSFT in 2023 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p049",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p007",
+    "query": "What was MSFT's total revenue in 2024 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p034",
+    "query": "What was the gross margin for MSFT during 2025 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2022_annual_10-K_p000",
+    "query": "What were the total operating expenses for AAPL in annual 2022?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p030",
+    "query": "What was MSFT's research and development expense in 2023 Q3?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p027",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p060",
+    "query": "What was the gross margin for MSFT during 2022 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p117",
+    "query": "What was the gross margin for MSFT during 2024 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2024_Q1_10-Q_p000",
+    "query": "How much cash and cash equivalents did AAPL hold in Q1 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p020",
+    "query": "What was MSFT's research and development expense in 2024 Q2?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p111",
+    "query": "Report the diluted earnings per share for MSFT in 2023 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2023_annual_10-K_p059",
+    "query": "How much cash and cash equivalents did AAPL hold in annual 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p031",
+    "query": "What was MSFT's total revenue in 2023 Q3?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p054",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p025",
+    "query": "What were the total operating expenses for MSFT in Q3 2022?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p112",
+    "query": "Report the diluted earnings per share for MSFT in 2022 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p050",
+    "query": "What was MSFT's total revenue in 2022 Q3?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p023",
+    "query": "What were the total operating expenses for MSFT in Q3 2022?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p114",
+    "query": "What was the gross margin for MSFT during 2023 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p089",
+    "query": "What was the gross margin for MSFT during 2024 Q3?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p037",
+    "query": "Report the diluted earnings per share for MSFT in 2024 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p027",
+    "query": "What was MSFT's research and development expense in 2022 Q3?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p012",
+    "query": "What were the total operating expenses for MSFT in Q2 2023?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p024",
+    "query": "What was the net income for MSFT in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p103",
+    "query": "Report the diluted earnings per share for MSFT in 2023 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2024_annual_10-K_p059",
+    "query": "What were the total operating expenses for AAPL in annual 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p062",
+    "query": "Report the diluted earnings per share for MSFT in 2024 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p024",
+    "query": "What was MSFT's total revenue in 2022 Q2?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p039",
+    "query": "What was MSFT's research and development expense in 2023 Q3?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p003",
+    "query": "Report the diluted earnings per share for MSFT in 2022 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p023",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p030",
+    "query": "What was MSFT's research and development expense in 2024 Q2?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p027",
+    "query": "What was the gross margin for MSFT during 2023 Q3?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p036",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p014",
+    "query": "What was MSFT's research and development expense in 2023 Q3?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p012",
+    "query": "Report the diluted earnings per share for MSFT in 2024 Q1.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p018",
+    "query": "Report the diluted earnings per share for MSFT in 2024 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p002",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p049",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p059",
+    "query": "How much cash and cash equivalents did MSFT hold in annual 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p110",
+    "query": "What was MSFT's total revenue in 2023 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p049",
+    "query": "How much cash and cash equivalents did MSFT hold in Q2 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p005",
+    "query": "What were the total operating expenses for MSFT in Q2 2022?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p099",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p087",
+    "query": "Report the diluted earnings per share for MSFT in 2024 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p117",
+    "query": "What was the gross margin for MSFT during 2024 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p061",
+    "query": "What was the gross margin for MSFT during 2022 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p089",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p068",
+    "query": "What was MSFT's total revenue in 2023 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p052",
+    "query": "What was MSFT's total revenue in 2023 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p089",
+    "query": "What was MSFT's total revenue in 2024 Q3?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p080",
+    "query": "Report the diluted earnings per share for MSFT in 2023 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p050",
+    "query": "What was MSFT's total revenue in 2024 Q2?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p013",
+    "query": "Report the diluted earnings per share for MSFT in 2022 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p156",
+    "query": "What was MSFT's research and development expense in 2024 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p000",
+    "query": "What were the total operating expenses for MSFT in annual 2023?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p028",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p004",
+    "query": "What was MSFT's research and development expense in 2023 Q2?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p002",
+    "query": "How much cash and cash equivalents did MSFT hold in Q2 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p047",
+    "query": "What were the total operating expenses for MSFT in annual 2022?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p087",
+    "query": "What were the total operating expenses for MSFT in annual 2022?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p026",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p005",
+    "query": "What was the gross margin for MSFT during 2022 Q2?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p040",
+    "query": "Report the diluted earnings per share for MSFT in 2022 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p033",
+    "query": "What was MSFT's total revenue in 2023 Q3?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p048",
+    "query": "What was MSFT's research and development expense in 2022 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p013",
+    "query": "What was the gross margin for MSFT during 2022 Q3?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p020",
+    "query": "What were the total operating expenses for MSFT in Q1 2023?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p037",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p004",
+    "query": "What was the gross margin for MSFT during 2023 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p042",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p115",
+    "query": "What was MSFT's research and development expense in 2024 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2023_Q1_10-Q_p010",
+    "query": "How much cash and cash equivalents did AAPL hold in Q1 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p046",
+    "query": "What was MSFT's research and development expense in 2023 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p060",
+    "query": "What was the net income for MSFT in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2023_Q4_10-Q_p023",
+    "query": "What was the net income for AAPL in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p012",
+    "query": "How much cash and cash equivalents did MSFT hold in Q1 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p000",
+    "query": "How much cash and cash equivalents did MSFT hold in Q1 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p013",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p043",
+    "query": "How much cash and cash equivalents did MSFT hold in Q2 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p005",
+    "query": "What was the gross margin for MSFT during 2023 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p020",
+    "query": "How much cash and cash equivalents did MSFT hold in Q2 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p049",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p118",
+    "query": "What was MSFT's total revenue in 2023 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p016",
+    "query": "How much cash and cash equivalents did MSFT hold in Q2 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p040",
+    "query": "What was MSFT's total revenue in 2022 Q2?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p019",
+    "query": "What was MSFT's total revenue in 2023 Q1?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p021",
+    "query": "What were the total operating expenses for MSFT in Q2 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p038",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p099",
+    "query": "Report the diluted earnings per share for MSFT in 2022 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2024_annual_10-K_p000",
+    "query": "What were the total operating expenses for AAPL in annual 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p026",
+    "query": "What was MSFT's research and development expense in 2024 Q2?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p023",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p025",
+    "query": "What were the total operating expenses for MSFT in Q2 2022?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p020",
+    "query": "Report the diluted earnings per share for MSFT in 2024 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p097",
+    "query": "What was the gross margin for MSFT during 2024 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p034",
+    "query": "What were the total operating expenses for MSFT in Q1 2025?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p062",
+    "query": "What was MSFT's total revenue in 2022 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p049",
+    "query": "What was the gross margin for MSFT during 2023 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p032",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p013",
+    "query": "What were the total operating expenses for MSFT in Q2 2022?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p016",
+    "query": "What was MSFT's total revenue in 2024 Q2?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p108",
+    "query": "What were the total operating expenses for MSFT in annual 2022?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p011",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p049",
+    "query": "What was MSFT's research and development expense in 2023 Q3?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p104",
+    "query": "What was the gross margin for MSFT during 2022 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p038",
+    "query": "What was MSFT's research and development expense in 2024 Q1?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p030",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p004",
+    "query": "What was MSFT's total revenue in 2024 Q2?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p012",
+    "query": "How much cash and cash equivalents did MSFT hold in Q1 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p024",
+    "query": "What was the gross margin for MSFT during 2025 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p066",
+    "query": "How much cash and cash equivalents did MSFT hold in annual 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p092",
+    "query": "What were the total operating expenses for MSFT in annual 2022?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p049",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p006",
+    "query": "What was MSFT's total revenue in 2022 Q3?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p061",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q1.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p074",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2024_annual_10-K_p059",
+    "query": "What was AAPL's total revenue in 2024 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p042",
+    "query": "Report the diluted earnings per share for MSFT in 2024 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p020",
+    "query": "What was the net income for MSFT in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p013",
+    "query": "What was MSFT's research and development expense in 2023 Q2?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p000",
+    "query": "What was MSFT's research and development expense in 2023 Q3?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p015",
+    "query": "How much cash and cash equivalents did MSFT hold in Q1 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2023_annual_10-K_p061",
+    "query": "Report the diluted earnings per share for AAPL in 2023 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p115",
+    "query": "What was MSFT's total revenue in 2023 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p072",
+    "query": "Report the diluted earnings per share for MSFT in 2023 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p024",
+    "query": "What was the gross margin for MSFT during 2022 Q3?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p004",
+    "query": "How much cash and cash equivalents did MSFT hold in Q1 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p011",
+    "query": "How much cash and cash equivalents did MSFT hold in Q1 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2023_annual_10-K_p021",
+    "query": "What was the net income for AAPL in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p004",
+    "query": "What was the gross margin for MSFT during 2023 Q3?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p050",
+    "query": "How much cash and cash equivalents did MSFT hold in Q1 2025?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p061",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q1.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2024_Q3_10-Q_p022",
+    "query": "What was AAPL's total revenue in 2024 Q3?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p031",
+    "query": "What was MSFT's total revenue in 2024 Q3?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p012",
+    "query": "What was the net income for MSFT in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p089",
+    "query": "What was MSFT's research and development expense in 2024 Q3?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p014",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p000",
+    "query": "What was the gross margin for MSFT during 2024 Q2?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p024",
+    "query": "Report the diluted earnings per share for MSFT in 2022 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p097",
+    "query": "What was MSFT's research and development expense in 2024 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2024_annual_10-K_p040",
+    "query": "What were the total operating expenses for AAPL in annual 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p025",
+    "query": "What was MSFT's total revenue in 2023 Q2?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p111",
+    "query": "What was MSFT's research and development expense in 2024 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p040",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p019",
+    "query": "What was the net income for MSFT in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p018",
+    "query": "Report the diluted earnings per share for MSFT in 2022 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p019",
+    "query": "What was MSFT's total revenue in 2022 Q3?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p006",
+    "query": "How much cash and cash equivalents did MSFT hold in Q1 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p047",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2023_annual_10-K_p059",
+    "query": "What was AAPL's total revenue in 2023 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p106",
+    "query": "What was the net income for MSFT in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p014",
+    "query": "What were the total operating expenses for MSFT in Q2 2023?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2022_Q1_10-Q_p017",
+    "query": "What was the net income for AAPL in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p006",
+    "query": "What was MSFT's research and development expense in 2024 Q3?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p034",
+    "query": "What was MSFT's research and development expense in 2025 Q1?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2024_Q1_10-Q_p000",
+    "query": "How much cash and cash equivalents did AAPL hold in Q1 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p027",
+    "query": "What was MSFT's total revenue in 2024 Q2?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p020",
+    "query": "What was MSFT's total revenue in 2022 Q3?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p015",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q1.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p024",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p020",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q1.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2024_Q3_10-Q_p000",
+    "query": "How much cash and cash equivalents did AAPL hold in Q3 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p049",
+    "query": "Report the diluted earnings per share for MSFT in 2024 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p015",
+    "query": "What was MSFT's research and development expense in 2022 Q2?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p039",
+    "query": "What was the gross margin for MSFT during 2023 Q3?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p048",
+    "query": "What was MSFT's research and development expense in 2023 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p048",
+    "query": "Report the diluted earnings per share for MSFT in 2024 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p002",
+    "query": "How much cash and cash equivalents did MSFT hold in Q2 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p013",
+    "query": "What were the total operating expenses for MSFT in Q2 2023?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p048",
+    "query": "What were the total operating expenses for MSFT in annual 2023?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p066",
+    "query": "What was MSFT's research and development expense in 2024 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p107",
+    "query": "Report the diluted earnings per share for MSFT in 2022 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p061",
+    "query": "How much cash and cash equivalents did MSFT hold in annual 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2024_annual_10-K_p051",
+    "query": "What was the gross margin for AAPL during 2024 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p022",
+    "query": "Report the diluted earnings per share for MSFT in 2024 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p013",
+    "query": "What was the gross margin for MSFT during 2024 Q2?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p004",
+    "query": "How much cash and cash equivalents did MSFT hold in Q2 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p016",
+    "query": "Report the diluted earnings per share for MSFT in 2024 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p020",
+    "query": "How much cash and cash equivalents did MSFT hold in Q1 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p018",
+    "query": "How much cash and cash equivalents did MSFT hold in Q1 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p011",
+    "query": "What was MSFT's total revenue in 2023 Q2?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p004",
+    "query": "What were the total operating expenses for MSFT in Q1 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p005",
+    "query": "What was the gross margin for MSFT during 2023 Q2?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p012",
+    "query": "Report the diluted earnings per share for MSFT in 2023 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p030",
+    "query": "What was MSFT's total revenue in 2025 Q1?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p112",
+    "query": "What was MSFT's research and development expense in 2024 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p031",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p025",
+    "query": "What was MSFT's research and development expense in 2022 Q2?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p009",
+    "query": "What was the gross margin for MSFT during 2022 Q3?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p028",
+    "query": "What was the gross margin for MSFT during 2022 Q2?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p034",
+    "query": "What was MSFT's total revenue in 2022 Q3?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p022",
+    "query": "What were the total operating expenses for MSFT in Q2 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p018",
+    "query": "What was MSFT's total revenue in 2023 Q1?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p027",
+    "query": "How much cash and cash equivalents did MSFT hold in Q3 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p018",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p049",
+    "query": "What were the total operating expenses for MSFT in Q2 2023?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p020",
+    "query": "What was MSFT's total revenue in 2025 Q1?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2023_annual_10-K_p063",
+    "query": "Report the diluted earnings per share for AAPL in 2023 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p134",
+    "query": "What was the gross margin for MSFT during 2024 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p026",
+    "query": "What was the gross margin for MSFT during 2025 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p003",
+    "query": "What was the net income for MSFT in 2022?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p118",
+    "query": "What was MSFT's total revenue in 2023 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p050",
+    "query": "What was MSFT's total revenue in 2022 Q3?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p002",
+    "query": "What was MSFT's research and development expense in 2024 Q2?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p036",
+    "query": "What were the total operating expenses for MSFT in Q2 2022?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p017",
+    "query": "What was the gross margin for MSFT during 2024 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p003",
+    "query": "Report the diluted earnings per share for MSFT in 2022 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p050",
+    "query": "What was MSFT's research and development expense in 2024 Q2?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p041",
+    "query": "How much cash and cash equivalents did MSFT hold in Q2 2022?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2024_Q1_10-Q_p022",
+    "query": "What was AAPL's total revenue in 2024 Q1?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p035",
+    "query": "What was MSFT's total revenue in 2022 Q3?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q2_10-Q_p013",
+    "query": "How much cash and cash equivalents did MSFT hold in Q2 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p081",
+    "query": "Report the diluted earnings per share for MSFT in 2022 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p002",
+    "query": "What was MSFT's research and development expense in 2023 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p107",
+    "query": "What was MSFT's total revenue in 2022 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p068",
+    "query": "How much cash and cash equivalents did MSFT hold in Q1 2025?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p022",
+    "query": "Report the diluted earnings per share for MSFT in 2022 Q2.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_annual_10-K_p108",
+    "query": "What was MSFT's research and development expense in 2022 annual?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p015",
+    "query": "What was the gross margin for MSFT during 2024 Q3?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p156",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p004",
+    "query": "What was the gross margin for MSFT during 2024 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p112",
+    "query": "What were the total operating expenses for MSFT in annual 2024?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p037",
+    "query": "What was MSFT's research and development expense in 2022 Q3?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p002",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2024_annual_10-K_p051",
+    "query": "What was the gross margin for AAPL during 2024 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2024_annual_10-K_p000",
+    "query": "What was AAPL's total revenue in 2024 annual?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p055",
+    "query": "What was the net income for MSFT in 2023?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2025_Q1_10-Q_p020",
+    "query": "Report the diluted earnings per share for MSFT in 2025 Q1.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p087",
+    "query": "Report the diluted earnings per share for MSFT in 2024 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2024_annual_10-K_p063",
+    "query": "How much cash and cash equivalents did AAPL hold in annual 2024?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p025",
+    "query": "What was the gross margin for MSFT during 2024 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p014",
+    "query": "What was MSFT's research and development expense in 2023 Q1?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p073",
+    "query": "How much cash and cash equivalents did MSFT hold in annual 2023?",
+    "category": "cash",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2024_Q3_10-Q_p000",
+    "query": "Report the diluted earnings per share for AAPL in 2024 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p147",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p011",
+    "query": "What were the total operating expenses for MSFT in Q3 2022?",
+    "category": "expenses",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2022_annual_10-K_p053",
+    "query": "What was the gross margin for AAPL during 2022 annual?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p050",
+    "query": "Report the diluted earnings per share for MSFT in 2023 annual.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q1_10-Q_p027",
+    "query": "What was MSFT's total revenue in 2024 Q1?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q2_10-Q_p004",
+    "query": "What was MSFT's total revenue in 2023 Q2?",
+    "category": "revenue",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_Q3_10-Q_p087",
+    "query": "Report the diluted earnings per share for MSFT in 2024 Q3.",
+    "category": "eps",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2022_Q3_10-Q_p015",
+    "query": "What was MSFT's research and development expense in 2022 Q3?",
+    "category": "r&d",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2024_annual_10-K_p091",
+    "query": "What was the net income for MSFT in 2024?",
+    "category": "income",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "MSFT_FY2023_Q1_10-Q_p039",
+    "query": "What was the gross margin for MSFT during 2023 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  },
+  {
+    "page_id": "AAPL_FY2022_Q1_10-Q_p010",
+    "query": "What was the gross margin for AAPL during 2022 Q1?",
+    "category": "margin",
+    "difficulty": "synthetic_baseline"
+  }
+]

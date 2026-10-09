@@ -1,0 +1,242 @@
+[
+  {
+    "ticker": "AAPL",
+    "industry": "technology",
+    "fiscal_year": "2022",
+    "quarter": "Q1",
+    "report_type": "10-Q",
+    "file_path": "technology\\AAPL\\2022_Q1_10-Q.pdf",
+    "accession": "0000320193-22-000007",
+    "filing_date": "2022-01-28"
+  },
+  {
+    "ticker": "AAPL",
+    "industry": "technology",
+    "fiscal_year": "2022",
+    "quarter": "Q2",
+    "report_type": "10-Q",
+    "file_path": "technology\\AAPL\\2022_Q2_10-Q.pdf",
+    "accession": "0000320193-22-000059",
+    "filing_date": "2022-04-29"
+  },
+  {
+    "ticker": "AAPL",
+    "industry": "technology",
+    "fiscal_year": "2022",
+    "quarter": "Q3",
+    "report_type": "10-Q",
+    "file_path": "technology\\AAPL\\2022_Q3_10-Q.pdf",
+    "accession": "0000320193-22-000070",
+    "filing_date": "2022-07-29"
+  },
+  {
+    "ticker": "AAPL",
+    "industry": "technology",
+    "fiscal_year": "2022",
+    "quarter": "annual",
+    "report_type": "10-K",
+    "file_path": "technology\\AAPL\\2022_annual_10-K.pdf",
+    "accession": "0000320193-22-000108",
+    "filing_date": "2022-10-28"
+  },
+  {
+    "ticker": "AAPL",
+    "industry": "technology",
+    "fiscal_year": "2023",
+    "quarter": "Q1",
+    "report_type": "10-Q",
+    "file_path": "technology\\AAPL\\2023_Q1_10-Q.pdf",
+    "accession": "0000320193-23-000006",
+    "filing_date": "2023-02-03"
+  },
+  {
+    "ticker": "AAPL",
+    "industry": "technology",
+    "fiscal_year": "2023",
+    "quarter": "Q3",
+    "report_type": "10-Q",
+    "file_path": "technology\\AAPL\\2023_Q3_10-Q.pdf",
+    "accession": "0000320193-23-000064",
+    "filing_date": "2023-05-05"
+  },
+  {
+    "ticker": "AAPL",
+    "industry": "technology",
+    "fiscal_year": "2023",
+    "quarter": "Q4",
+    "report_type": "10-Q",
+    "file_path": "technology\\AAPL\\2023_Q4_10-Q.pdf",
+    "accession": "0000320193-23-000077",
+    "filing_date": "2023-08-04"
+  },
+  {
+    "ticker": "AAPL",
+    "industry": "technology",
+    "fiscal_year": "2023",
+    "quarter": "annual",
+    "report_type": "10-K",
+    "file_path": "technology\\AAPL\\2023_annual_10-K.pdf",
+    "accession": "0000320193-23-000106",
+    "filing_date": "2023-11-03"
+  },
+  {
+    "ticker": "AAPL",
+    "industry": "technology",
+    "fiscal_year": "2024",
+    "quarter": "Q1",
+    "report_type": "10-Q",
+    "file_path": "technology\\AAPL\\2024_Q1_10-Q.pdf",
+    "accession": "0000320193-24-000006",
+    "filing_date": "2024-02-02"
+  },
+  {
+    "ticker": "AAPL",
+    "industry": "technology",
+    "fiscal_year": "2024",
+    "quarter": "Q2",
+    "report_type": "10-Q",
+    "file_path": "technology\\AAPL\\2024_Q2_10-Q.pdf",
+    "accession": "0000320193-24-000069",
+    "filing_date": "2024-05-03"
+  },
+  {
+    "ticker": "AAPL",
+    "industry": "technology",
+    "fiscal_year": "2024",
+    "quarter": "Q3",
+    "report_type": "10-Q",
+    "file_path": "technology\\AAPL\\2024_Q3_10-Q.pdf",
+    "accession": "0000320193-24-000081",
+    "filing_date": "2024-08-02"
+  },
+  {
+    "ticker": "AAPL",
+    "industry": "technology",
+    "fiscal_year": "2024",
+    "quarter": "annual",
+    "report_type": "10-K",
+    "file_path": "technology\\AAPL\\2024_annual_10-K.pdf",
+    "accession": "0000320193-24-000123",
+    "filing_date": "2024-11-01"
+  },
+  {
+    "ticker": "MSFT",
+    "industry": "technology",
+    "fiscal_year": "2022",
+    "quarter": "Q2",
+    "report_type": "10-Q",
+    "file_path": "technology\\MSFT\\2022_Q2_10-Q.pdf",
+    "accession": "0001564590-22-002324",
+    "filing_date": "2022-01-25"
+  },
+  {
+    "ticker": "MSFT",
+    "industry": "technology",
+    "fiscal_year": "2022",
+    "quarter": "Q3",
+    "report_type": "10-Q",
+    "file_path": "technology\\MSFT\\2022_Q3_10-Q.pdf",
+    "accession": "0001564590-22-015675",
+    "filing_date": "2022-04-26"
+  },
+  {
+    "ticker": "MSFT",
+    "industry": "technology",
+    "fiscal_year": "2022",
+    "quarter": "annual",
+    "report_type": "10-K",
+    "file_path": "technology\\MSFT\\2022_annual_10-K.pdf",
+    "accession": "0001564590-22-026876",
+    "filing_date": "2022-07-28"
+  },
+  {
+    "ticker": "MSFT",
+    "industry": "technology",
+    "fiscal_year": "2023",
+    "quarter": "Q1",
+    "report_type": "10-Q",
+    "file_path": "technology\\MSFT\\2023_Q1_10-Q.pdf",
+    "accession": "0001564590-22-035087",
+    "filing_date": "2022-10-25"
+  },
+  {
+    "ticker": "MSFT",
+    "industry": "technology",
+    "fiscal_year": "2023",
+    "quarter": "Q2",
+    "report_type": "10-Q",
+    "file_path": "technology\\MSFT\\2023_Q2_10-Q.pdf",
+    "accession": "0001564590-23-000733",
+    "filing_date": "2023-01-24"
+  },
+  {
+    "ticker": "MSFT",
+    "industry": "technology",
+    "fiscal_year": "2023",
+    "quarter": "Q3",
+    "report_type": "10-Q",
+    "file_path": "technology\\MSFT\\2023_Q3_10-Q.pdf",
+    "accession": "0000950170-23-014423",
+    "filing_date": "2023-04-25"
+  },
+  {
+    "ticker": "MSFT",
+    "industry": "technology",
+    "fiscal_year": "2023",
+    "quarter": "annual",
+    "report_type": "10-K",
+    "file_path": "technology\\MSFT\\2023_annual_10-K.pdf",
+    "accession": "0000950170-23-035122",
+    "filing_date": "2023-07-27"
+  },
+  {
+    "ticker": "MSFT",
+    "industry": "technology",
+    "fiscal_year": "2024",
+    "quarter": "Q1",
+    "report_type": "10-Q",
+    "file_path": "technology\\MSFT\\2024_Q1_10-Q.pdf",
+    "accession": "0000950170-23-054855",
+    "filing_date": "2023-10-24"
+  },
+  {
+    "ticker": "MSFT",
+    "industry": "technology",
+    "fiscal_year": "2024",
+    "quarter": "Q2",
+    "report_type": "10-Q",
+    "file_path": "technology\\MSFT\\2024_Q2_10-Q.pdf",
+    "accession": "0000950170-24-008814",
+    "filing_date": "2024-01-30"
+  },
+  {
+    "ticker": "MSFT",
+    "industry": "technology",
+    "fiscal_year": "2024",
+    "quarter": "Q3",
+    "report_type": "10-Q",
+    "file_path": "technology\\MSFT\\2024_Q3_10-Q.pdf",
+    "accession": "0000950170-24-048288",
+    "filing_date": "2024-04-25"
+  },
+  {
+    "ticker": "MSFT",
+    "industry": "technology",
+    "fiscal_year": "2024",
+    "quarter": "annual",
+    "report_type": "10-K",
+    "file_path": "technology\\MSFT\\2024_annual_10-K.pdf",
+    "accession": "0000950170-24-087843",
+    "filing_date": "2024-07-30"
+  },
+  {
+    "ticker": "MSFT",
+    "industry": "technology",
+    "fiscal_year": "2025",
+    "quarter": "Q1",
+    "report_type": "10-Q",
+    "file_path": "technology\\MSFT\\2025_Q1_10-Q.pdf",
+    "accession": "0000950170-24-118967",
+    "filing_date": "2024-10-30"
+  }
+]

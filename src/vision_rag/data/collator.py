@@ -19,6 +19,10 @@ Vision Padding Trap 防御:
 import torch
 from typing import Any, Optional, Callable
 
+try:
+    from PIL import Image as PILImage
+except ImportError:
+    PILImage = None
 
 class VisFinRAGCollator:
     """
@@ -39,8 +43,7 @@ class VisFinRAGCollator:
       - "meta_d":       dict
 
     输出: dict, 包含:
-      - "images":               [B, C, H, W] (已标准化)
-      - "pixel_attention_mask": [B, H', W'] (ViT 输入分辨率, 有效=1, padding=0)
+      - "images":               [B, C, H, W] (已标准化) 或 list[PIL.Image]
       - "query_text":           list[str]
       - "soft_masks":           [B, L]
       - "padding_mask":         [B, L]
@@ -63,36 +66,17 @@ class VisFinRAGCollator:
         meta_q = [f["meta_q"] for f in features]
         meta_d = [f["meta_d"] for f in features]
 
-        if self.mock_mode or self.image_processor is None:
-            # 检查是否是 PIL Image（真实模式 Dataset 返回 PIL Image）
-            from PIL import Image as PILImage
-            if len(features) > 0 and isinstance(features[0]["image"], PILImage.Image):
-                # 真实模式: 直接传 PIL Image 列表，由 backbone processor 处理
-                images = [f["image"] for f in features]
-                pixel_attention_mask = None
-            else:
-                # Mock 模式: 直接 stack 张量, 生成全 1 attention mask
-                images = torch.stack([f["image"] for f in features])
-                B, C, H, W = images.shape
-                pixel_attention_mask = torch.ones(
-                    B, H, W, dtype=torch.bool,
-                )
+        first_image = features[0]["image"]
+        
+        # Determine if images are PIL -> meaning we are in real mode
+        if PILImage is not None and isinstance(first_image, PILImage.Image):
+            images = [f["image"] for f in features]
         else:
-            # 真实模式: 通过 ColPaliProcessor 处理
-            # ColPaliProcessor.process_images returns:
-            #   pixel_values: [B, C, H, W]
-            #   pixel_attention_mask: [B, H, W]  (1=有效, 0=padding)
-            raw_images = [f["image"] for f in features]
-            processed = self.image_processor.process_images(raw_images)
-            images = processed["pixel_values"]
-            pixel_attention_mask = processed.get(
-                "pixel_attention_mask",
-                torch.ones(images.shape[0], images.shape[2], images.shape[3], dtype=torch.bool),
-            )
+            # Tensor -> mock mode or pre-processed
+            images = torch.stack([f["image"] for f in features])
 
         batch = {
             "images": images,
-            "pixel_attention_mask": pixel_attention_mask,
             "query_text": query_texts,
             "soft_masks": soft_masks,
             "padding_mask": padding_masks,

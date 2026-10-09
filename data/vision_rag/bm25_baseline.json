@@ -1,0 +1,549 @@
+{
+  "hit_at_1": 1,
+  "hit_at_5": 6,
+  "total": 10,
+  "recall_at_1": 0.1,
+  "recall_at_5": 0.6,
+  "collisions": [
+    {
+      "query": "What was Apple's iPhone net sales for the three months ended December 25, 2021?",
+      "answer": "71,628",
+      "correct_page": "AAPL_FY2022_Q1_10-Q_p017",
+      "bm25_hit_at_1": false,
+      "bm25_hit_at_5": true,
+      "bm25_top5": [
+        {
+          "rank": 1,
+          "page_id": "AAPL_FY2022_Q1_10-Q_p009",
+          "ticker": "AAPL",
+          "fiscal_year": "2022",
+          "quarter": "Q1",
+          "bm25_score": 33.3648,
+          "text_preview": "Note 2 – Revenue Net sales disaggregated by significant products and services for the three months ended December 25, 2021 and December 26, 2020 were "
+        },
+        {
+          "rank": 2,
+          "page_id": "AAPL_FY2023_Q1_10-Q_p009",
+          "ticker": "AAPL",
+          "fiscal_year": "2023",
+          "quarter": "Q1",
+          "bm25_score": 32.6595,
+          "text_preview": "Note 2 – Revenue Net sales disaggregated by significant products and services for the three months ended December 31, 2022 and December 25, 2021 were "
+        },
+        {
+          "rank": 3,
+          "page_id": "AAPL_FY2022_Q3_10-Q_p009",
+          "ticker": "AAPL",
+          "fiscal_year": "2022",
+          "quarter": "Q3",
+          "bm25_score": 29.5132,
+          "text_preview": "Note 2 – Revenue Net sales disaggregated by significant products and services for the three- and nine-month periods ended June 25, 2022 and June 26, 2"
+        },
+        {
+          "rank": 4,
+          "page_id": "AAPL_FY2023_Q1_10-Q_p019",
+          "ticker": "AAPL",
+          "fiscal_year": "2023",
+          "quarter": "Q1",
+          "bm25_score": 29.0599,
+          "text_preview": "Greater China Greater China net sales decreased during the first quarter of 2023 compared to the same quarter in 2022 due to the weakness of the renmi"
+        },
+        {
+          "rank": 5,
+          "page_id": "AAPL_FY2022_Q1_10-Q_p017",
+          "ticker": "AAPL",
+          "fiscal_year": "2022",
+          "quarter": "Q1",
+          "bm25_score": 28.6839,
+          "text_preview": "The extent of the continuing impact of the COVID-19 pandemic on the Company’s operational and financial performance is uncertain and will depend on ma"
+        }
+      ]
+    },
+    {
+      "query": "What was the percentage change in Services net sales between December 2020 and December 2021?",
+      "answer": "24",
+      "correct_page": "AAPL_FY2022_Q1_10-Q_p017",
+      "bm25_hit_at_1": false,
+      "bm25_hit_at_5": false,
+      "bm25_top5": [
+        {
+          "rank": 1,
+          "page_id": "AAPL_FY2022_Q1_10-Q_p019",
+          "ticker": "AAPL",
+          "fiscal_year": "2022",
+          "quarter": "Q1",
+          "bm25_score": 32.7169,
+          "text_preview": "Rest of Asia Pacific Rest of Asia Pacific net sales increased during the first quarter of 2022 compared to the same quarter in 2021 due primarily to h"
+        },
+        {
+          "rank": 2,
+          "page_id": "MSFT_FY2022_Q2_10-Q_p040",
+          "ticker": "MSFT",
+          "fiscal_year": "2022",
+          "quarter": "Q2",
+          "bm25_score": 31.9664,
+          "text_preview": "PART I Item 2   Six Months Ended December 31, 2021 Compared with Six Months Ended December 31, 2020 Research and development expenses increased $1.5 b"
+        },
+        {
+          "rank": 3,
+          "page_id": "MSFT_FY2022_Q2_10-Q_p036",
+          "ticker": "MSFT",
+          "fiscal_year": "2022",
+          "quarter": "Q2",
+          "bm25_score": 31.8176,
+          "text_preview": "PART I Item 2   Six Months Ended December 31, 2021 Compared with Six Months Ended December 31, 2020 Revenue increased $16.8 billion or 21% driven by g"
+        },
+        {
+          "rank": 4,
+          "page_id": "MSFT_FY2022_Q2_10-Q_p035",
+          "ticker": "MSFT",
+          "fiscal_year": "2022",
+          "quarter": "Q2",
+          "bm25_score": 31.2532,
+          "text_preview": "PART I Item 2     SUMMARY RESULTS OF OPERATIONS   (In millions, except percentages and per share amounts)  Three Months Ended December 31,   Percentag"
+        },
+        {
+          "rank": 5,
+          "page_id": "AAPL_FY2022_annual_10-K_p027",
+          "ticker": "AAPL",
+          "fiscal_year": "2022",
+          "quarter": "annual",
+          "bm25_score": 29.2414,
+          "text_preview": "Gross Margin Products and Services gross margin and gross margin percentage for 2022, 2021 and 2020 were as follows (dollars in millions): 2022 2021 2"
+        }
+      ]
+    },
+    {
+      "query": "What was Apple's total net sales for the nine months ended June 25, 2022?",
+      "answer": "304,182",
+      "correct_page": "AAPL_FY2022_Q3_10-Q_p017",
+      "bm25_hit_at_1": false,
+      "bm25_hit_at_5": false,
+      "bm25_top5": [
+        {
+          "rank": 1,
+          "page_id": "AAPL_FY2022_Q3_10-Q_p009",
+          "ticker": "AAPL",
+          "fiscal_year": "2022",
+          "quarter": "Q3",
+          "bm25_score": 28.2723,
+          "text_preview": "Note 2 – Revenue Net sales disaggregated by significant products and services for the three- and nine-month periods ended June 25, 2022 and June 26, 2"
+        },
+        {
+          "rank": 2,
+          "page_id": "AAPL_FY2022_Q3_10-Q_p020",
+          "ticker": "AAPL",
+          "fiscal_year": "2022",
+          "quarter": "Q3",
+          "bm25_score": 27.5987,
+          "text_preview": "Operating Expenses Operating expenses for the three- and nine-month periods ended June 25, 2022 and June 26, 2021 were as follows (dollars in millions"
+        },
+        {
+          "rank": 3,
+          "page_id": "AAPL_FY2023_Q4_10-Q_p020",
+          "ticker": "AAPL",
+          "fiscal_year": "2023",
+          "quarter": "Q4",
+          "bm25_score": 27.2054,
+          "text_preview": "Operating Expenses Operating expenses for the three- and nine-month periods ended July 1, 2023 and June 25, 2022 were as follows (dollars in millions)"
+        },
+        {
+          "rank": 4,
+          "page_id": "AAPL_FY2023_Q4_10-Q_p009",
+          "ticker": "AAPL",
+          "fiscal_year": "2023",
+          "quarter": "Q4",
+          "bm25_score": 25.665,
+          "text_preview": "Note 2 – Revenue Net sales disaggregated by significant products and services for the three- and nine-month periods ended July 1, 2023 and June 25, 20"
+        },
+        {
+          "rank": 5,
+          "page_id": "AAPL_FY2022_Q3_10-Q_p015",
+          "ticker": "AAPL",
+          "fiscal_year": "2022",
+          "quarter": "Q3",
+          "bm25_score": 25.2917,
+          "text_preview": "Note 9 – Segment Information and Geographic Data The following table shows information by reportable segment for the three- and nine-month periods end"
+        }
+      ]
+    },
+    {
+      "query": "What was the percentage change in iPad net sales for the three months ended June 2022 vs June 2021?",
+      "answer": "(2)",
+      "correct_page": "AAPL_FY2022_Q3_10-Q_p017",
+      "bm25_hit_at_1": false,
+      "bm25_hit_at_5": true,
+      "bm25_top5": [
+        {
+          "rank": 1,
+          "page_id": "AAPL_FY2022_Q3_10-Q_p020",
+          "ticker": "AAPL",
+          "fiscal_year": "2022",
+          "quarter": "Q3",
+          "bm25_score": 35.0067,
+          "text_preview": "Operating Expenses Operating expenses for the three- and nine-month periods ended June 25, 2022 and June 26, 2021 were as follows (dollars in millions"
+        },
+        {
+          "rank": 2,
+          "page_id": "AAPL_FY2022_Q3_10-Q_p017",
+          "ticker": "AAPL",
+          "fiscal_year": "2022",
+          "quarter": "Q3",
+          "bm25_score": 33.5102,
+          "text_preview": "COVID-19 The COVID-19 pandemic has had, and continues to have, a significant impact around the world, prompting governments and businesses to take unp"
+        },
+        {
+          "rank": 3,
+          "page_id": "AAPL_FY2022_Q3_10-Q_p009",
+          "ticker": "AAPL",
+          "fiscal_year": "2022",
+          "quarter": "Q3",
+          "bm25_score": 32.9772,
+          "text_preview": "Note 2 – Revenue Net sales disaggregated by significant products and services for the three- and nine-month periods ended June 25, 2022 and June 26, 2"
+        },
+        {
+          "rank": 4,
+          "page_id": "AAPL_FY2024_Q3_10-Q_p017",
+          "ticker": "AAPL",
+          "fiscal_year": "2024",
+          "quarter": "Q3",
+          "bm25_score": 31.2111,
+          "text_preview": "Products and Services Performance The following table shows net sales by category for the three- and nine-month periods ended June 29, 2024 and July 1"
+        },
+        {
+          "rank": 5,
+          "page_id": "AAPL_FY2023_Q4_10-Q_p018",
+          "ticker": "AAPL",
+          "fiscal_year": "2023",
+          "quarter": "Q4",
+          "bm25_score": 30.8401,
+          "text_preview": "Products and Services Performance The following table shows net sales by category for the three- and nine-month periods ended July 1, 2023 and June 25"
+        }
+      ]
+    },
+    {
+      "query": "What was Microsoft's operating income for Q3 FY2023 (three months ended March 31, 2023)?",
+      "answer": "22,352",
+      "correct_page": "MSFT_FY2023_Q3_10-Q_p040",
+      "bm25_hit_at_1": false,
+      "bm25_hit_at_5": false,
+      "bm25_top5": [
+        {
+          "rank": 1,
+          "page_id": "MSFT_FY2023_Q3_10-Q_p001",
+          "ticker": "MSFT",
+          "fiscal_year": "2023",
+          "quarter": "Q3",
+          "bm25_score": 17.1919,
+          "text_preview": "MICROSOFT CORPORATION  FORM 10-Q  For the Quarter Ended March 31, 2023 INDEX        Page PART I. FINANCIAL INFORMATION             Item 1. Financial S"
+        },
+        {
+          "rank": 2,
+          "page_id": "MSFT_FY2024_Q3_10-Q_p001",
+          "ticker": "MSFT",
+          "fiscal_year": "2024",
+          "quarter": "Q3",
+          "bm25_score": 17.1124,
+          "text_preview": "MICROSOFT CORPORATION  FORM 10-Q  For the Quarter Ended March 31, 2024 INDEX        Page PART I. FINANCIAL INFORMATION             Item 1. Financial S"
+        },
+        {
+          "rank": 3,
+          "page_id": "MSFT_FY2023_Q3_10-Q_p034",
+          "ticker": "MSFT",
+          "fiscal_year": "2023",
+          "quarter": "Q3",
+          "bm25_score": 16.8092,
+          "text_preview": "PART I Item 1   Revenue, classified by significant product and service offerings, was as follows:   (In millions)   Three Months Ended March 31,    Ni"
+        },
+        {
+          "rank": 4,
+          "page_id": "MSFT_FY2023_Q3_10-Q_p026",
+          "ticker": "MSFT",
+          "fiscal_year": "2023",
+          "quarter": "Q3",
+          "bm25_score": 16.736,
+          "text_preview": "PART I Item 1   We are subject to income tax in many jurisdictions outside the U.S. Our operations in certain jurisdictions remain subject  to examina"
+        },
+        {
+          "rank": 5,
+          "page_id": "MSFT_FY2023_Q3_10-Q_p025",
+          "ticker": "MSFT",
+          "fiscal_year": "2023",
+          "quarter": "Q3",
+          "bm25_score": 16.6044,
+          "text_preview": "PART I Item 1   As of March 31, 2023 and June 30, 2022, the estimated fair value of long-term debt, including the current portion, was  $47.8 billion "
+        }
+      ]
+    },
+    {
+      "query": "What was Microsoft's diluted EPS (non-GAAP) for the nine months ended March 31, 2023?",
+      "answer": "7.12",
+      "correct_page": "MSFT_FY2023_Q3_10-Q_p040",
+      "bm25_hit_at_1": false,
+      "bm25_hit_at_5": true,
+      "bm25_top5": [
+        {
+          "rank": 1,
+          "page_id": "MSFT_FY2024_Q3_10-Q_p047",
+          "ticker": "MSFT",
+          "fiscal_year": "2024",
+          "quarter": "Q3",
+          "bm25_score": 36.1622,
+          "text_preview": "PART I Item 2   SUMMARY RESULTS OF OPERATIONS   (In millions, except percentages and per share  amounts)   Three Months Ended March 31, Percentage Cha"
+        },
+        {
+          "rank": 2,
+          "page_id": "MSFT_FY2022_Q3_10-Q_p036",
+          "ticker": "MSFT",
+          "fiscal_year": "2022",
+          "quarter": "Q3",
+          "bm25_score": 34.3348,
+          "text_preview": "PART I Item 2     SUMMARY RESULTS OF OPERATIONS   (In millions, except percentages and per share amounts)   Three Months Ended March 31,    Percentage"
+        },
+        {
+          "rank": 3,
+          "page_id": "MSFT_FY2024_Q3_10-Q_p058",
+          "ticker": "MSFT",
+          "fiscal_year": "2024",
+          "quarter": "Q3",
+          "bm25_score": 34.2047,
+          "text_preview": "PART I Item 2   INCOME TAXES Effective Tax Rate Our effective tax rate was 18% and 19% for the three months ended March 31, 2024 and 2023, respectivel"
+        },
+        {
+          "rank": 4,
+          "page_id": "MSFT_FY2023_Q3_10-Q_p040",
+          "ticker": "MSFT",
+          "fiscal_year": "2023",
+          "quarter": "Q3",
+          "bm25_score": 33.6011,
+          "text_preview": "PART I Item 2   SUMMARY RESULTS OF OPERATIONS   (In millions, except percentages and per share  amounts)   Three Months Ended March 31, Percentage Cha"
+        },
+        {
+          "rank": 5,
+          "page_id": "MSFT_FY2023_Q3_10-Q_p048",
+          "ticker": "MSFT",
+          "fiscal_year": "2023",
+          "quarter": "Q3",
+          "bm25_score": 33.3829,
+          "text_preview": "PART I Item 2   INCOME TAXES Effective Tax Rate Our effective tax rate was 19% and 17% for the three months ended March 31, 2023 and 2022, respectivel"
+        }
+      ]
+    },
+    {
+      "query": "What was Microsoft's gross margin for the six months ended December 31, 2021?",
+      "answer": "66,439",
+      "correct_page": "MSFT_FY2022_Q2_10-Q_p035",
+      "bm25_hit_at_1": true,
+      "bm25_hit_at_5": true,
+      "bm25_top5": [
+        {
+          "rank": 1,
+          "page_id": "MSFT_FY2022_Q2_10-Q_p035",
+          "ticker": "MSFT",
+          "fiscal_year": "2022",
+          "quarter": "Q2",
+          "bm25_score": 27.4849,
+          "text_preview": "PART I Item 2     SUMMARY RESULTS OF OPERATIONS   (In millions, except percentages and per share amounts)  Three Months Ended December 31,   Percentag"
+        },
+        {
+          "rank": 2,
+          "page_id": "MSFT_FY2022_Q2_10-Q_p036",
+          "ticker": "MSFT",
+          "fiscal_year": "2022",
+          "quarter": "Q2",
+          "bm25_score": 26.7857,
+          "text_preview": "PART I Item 2   Six Months Ended December 31, 2021 Compared with Six Months Ended December 31, 2020 Revenue increased $16.8 billion or 21% driven by g"
+        },
+        {
+          "rank": 3,
+          "page_id": "MSFT_FY2024_Q2_10-Q_p041",
+          "ticker": "MSFT",
+          "fiscal_year": "2024",
+          "quarter": "Q2",
+          "bm25_score": 26.1713,
+          "text_preview": "PART I Item 2     Three Months Ended December 31, 2023 Compared with Three Months Ended December 31, 2022 Revenue increased $9.3 billion or 18% driven"
+        },
+        {
+          "rank": 4,
+          "page_id": "MSFT_FY2023_Q2_10-Q_p035",
+          "ticker": "MSFT",
+          "fiscal_year": "2023",
+          "quarter": "Q2",
+          "bm25_score": 25.4492,
+          "text_preview": "PART I Item 2     SUMMARY RESULTS OF OPERATIONS   (In millions, except percentages and per share amounts)   Three Months Ended December 31, Percentage"
+        },
+        {
+          "rank": 5,
+          "page_id": "MSFT_FY2023_Q2_10-Q_p027",
+          "ticker": "MSFT",
+          "fiscal_year": "2023",
+          "quarter": "Q2",
+          "bm25_score": 25.3214,
+          "text_preview": "PART I Item 1     Revenue and costs are generally directly attributed to our segments. However, due to the integrated structure of our business, certa"
+        }
+      ]
+    },
+    {
+      "query": "What was the percentage change in Microsoft's net income for the three months ended December 31, 2021 compared to the same period in 2020?",
+      "answer": "21%",
+      "correct_page": "MSFT_FY2022_Q2_10-Q_p035",
+      "bm25_hit_at_1": false,
+      "bm25_hit_at_5": true,
+      "bm25_top5": [
+        {
+          "rank": 1,
+          "page_id": "AAPL_FY2022_Q1_10-Q_p019",
+          "ticker": "AAPL",
+          "fiscal_year": "2022",
+          "quarter": "Q1",
+          "bm25_score": 51.3072,
+          "text_preview": "Rest of Asia Pacific Rest of Asia Pacific net sales increased during the first quarter of 2022 compared to the same quarter in 2021 due primarily to h"
+        },
+        {
+          "rank": 2,
+          "page_id": "AAPL_FY2022_Q1_10-Q_p020",
+          "ticker": "AAPL",
+          "fiscal_year": "2022",
+          "quarter": "Q1",
+          "bm25_score": 50.786,
+          "text_preview": "Research and Development The growth in research and development (“R&D”) expense during the first quarter of 2022 compared to the same quarter in 2021 "
+        },
+        {
+          "rank": 3,
+          "page_id": "AAPL_FY2023_Q1_10-Q_p021",
+          "ticker": "AAPL",
+          "fiscal_year": "2023",
+          "quarter": "Q1",
+          "bm25_score": 49.6687,
+          "text_preview": "Operating Expenses Operating expenses for the three months ended December 31, 2022 and December 25, 2021 were as follows (dollars in millions): Three "
+        },
+        {
+          "rank": 4,
+          "page_id": "MSFT_FY2022_Q2_10-Q_p035",
+          "ticker": "MSFT",
+          "fiscal_year": "2022",
+          "quarter": "Q2",
+          "bm25_score": 48.3927,
+          "text_preview": "PART I Item 2     SUMMARY RESULTS OF OPERATIONS   (In millions, except percentages and per share amounts)  Three Months Ended December 31,   Percentag"
+        },
+        {
+          "rank": 5,
+          "page_id": "AAPL_FY2024_Q1_10-Q_p019",
+          "ticker": "AAPL",
+          "fiscal_year": "2024",
+          "quarter": "Q1",
+          "bm25_score": 46.9038,
+          "text_preview": "Operating Expenses Operating expenses for the three months ended December 30, 2023 and December 31, 2022 were as follows (dollars in millions): Three "
+        }
+      ]
+    },
+    {
+      "query": "What was Microsoft Intelligent Cloud segment's revenue in fiscal year 2023?",
+      "answer": "87,907",
+      "correct_page": "MSFT_FY2023_annual_10-K_p046",
+      "bm25_hit_at_1": false,
+      "bm25_hit_at_5": true,
+      "bm25_top5": [
+        {
+          "rank": 1,
+          "page_id": "MSFT_FY2023_Q3_10-Q_p038",
+          "ticker": "MSFT",
+          "fiscal_year": "2023",
+          "quarter": "Q3",
+          "bm25_score": 18.3677,
+          "text_preview": "PART I Item 2   Change in Accounting Estimate In July 2022, we completed an assessment of the useful lives of our server and network equipment. Due to"
+        },
+        {
+          "rank": 2,
+          "page_id": "MSFT_FY2023_annual_10-K_p046",
+          "ticker": "MSFT",
+          "fiscal_year": "2023",
+          "quarter": "annual",
+          "bm25_score": 18.1931,
+          "text_preview": "PART II Item 7   SEGMENT RESULTS OF OPERATIONS   (In millions, except percentages)   2023 2022 Percentage Change                                      "
+        },
+        {
+          "rank": 3,
+          "page_id": "MSFT_FY2025_Q1_10-Q_p038",
+          "ticker": "MSFT",
+          "fiscal_year": "2025",
+          "quarter": "Q1",
+          "bm25_score": 18.0213,
+          "text_preview": "PART I Item 2   32 Industry Trends Our industry is dynamic and highly competitive, with frequent changes in both technologies and business models. Eac"
+        },
+        {
+          "rank": 4,
+          "page_id": "MSFT_FY2023_Q2_10-Q_p032",
+          "ticker": "MSFT",
+          "fiscal_year": "2023",
+          "quarter": "Q2",
+          "bm25_score": 18.0063,
+          "text_preview": "PART I Item 2   Change in Accounting Estimate In July 2022, we completed an assessment of the useful lives of our server and network equipment. Due to"
+        },
+        {
+          "rank": 5,
+          "page_id": "MSFT_FY2023_annual_10-K_p103",
+          "ticker": "MSFT",
+          "fiscal_year": "2023",
+          "quarter": "annual",
+          "bm25_score": 17.7457,
+          "text_preview": "PART II Item 8   •Gaming, including Xbox hardware and Xbox content and services, comprising first- and third-party content  (including games and in-ga"
+        }
+      ]
+    },
+    {
+      "query": "What was the percentage change in More Personal Computing operating income between FY2022 and FY2023?",
+      "answer": "(20)",
+      "correct_page": "MSFT_FY2023_annual_10-K_p046",
+      "bm25_hit_at_1": false,
+      "bm25_hit_at_5": false,
+      "bm25_top5": [
+        {
+          "rank": 1,
+          "page_id": "MSFT_FY2022_Q2_10-Q_p036",
+          "ticker": "MSFT",
+          "fiscal_year": "2022",
+          "quarter": "Q2",
+          "bm25_score": 26.3607,
+          "text_preview": "PART I Item 2   Six Months Ended December 31, 2021 Compared with Six Months Ended December 31, 2020 Revenue increased $16.8 billion or 21% driven by g"
+        },
+        {
+          "rank": 2,
+          "page_id": "MSFT_FY2023_Q3_10-Q_p041",
+          "ticker": "MSFT",
+          "fiscal_year": "2023",
+          "quarter": "Q3",
+          "bm25_score": 26.0987,
+          "text_preview": "PART I Item 2   •General and administrative expenses increased $163 million or 11% driven by acquisition-related expenses and  investments in corporat"
+        },
+        {
+          "rank": 3,
+          "page_id": "MSFT_FY2023_annual_10-K_p045",
+          "ticker": "MSFT",
+          "fiscal_year": "2023",
+          "quarter": "annual",
+          "bm25_score": 26.01,
+          "text_preview": "PART II Item 7   SUMMARY RESULTS OF OPERATIONS   (In millions, except percentages and per share amounts)   2023 2022 Percentage Change                "
+        },
+        {
+          "rank": 4,
+          "page_id": "MSFT_FY2024_Q2_10-Q_p041",
+          "ticker": "MSFT",
+          "fiscal_year": "2024",
+          "quarter": "Q2",
+          "bm25_score": 25.9295,
+          "text_preview": "PART I Item 2     Three Months Ended December 31, 2023 Compared with Three Months Ended December 31, 2022 Revenue increased $9.3 billion or 18% driven"
+        },
+        {
+          "rank": 5,
+          "page_id": "MSFT_FY2024_Q3_10-Q_p049",
+          "ticker": "MSFT",
+          "fiscal_year": "2024",
+          "quarter": "Q3",
+          "bm25_score": 25.3701,
+          "text_preview": "PART I Item 2   Gross margin increased $19.3 billion or 18% driven by growth across each of our segments. •Gross margin percentage increased. Excludin"
+        }
+      ]
+    }
+  ]
+}

@@ -275,10 +275,20 @@ class VisFinRAGDataset(Dataset):
 
         训练时使用截取的文本片段作为 pseudo-query,
         评测时使用标注的 question。
+        增加 Query 多样性 (模板池 + 随机采样)。
         """
-        # 简化版: 使用页面文本前 80 个字符作为 query hint
+        import random
         hint = text_snippet[:80].strip() if text_snippet else ""
-        return f"Find {ticker} {fiscal_year} {quarter} financial data: {hint}"
+        
+        templates = [
+            f"Find {ticker} {fiscal_year} {quarter} financial data: {hint}",
+            f"Can you show me the {quarter} {fiscal_year} report for {ticker}? Reference: {hint}",
+            f"What was {ticker}'s performance in {fiscal_year} {quarter}? See: {hint}",
+            f"Retrieve the financial document for {ticker} from {fiscal_year} {quarter}. Context: {hint}",
+            f"Looking for {ticker} data from {quarter} {fiscal_year}. Hint: {hint}"
+        ]
+        
+        return random.choice(templates)
 
     def get_metadata_df(self) -> pd.DataFrame:
         """

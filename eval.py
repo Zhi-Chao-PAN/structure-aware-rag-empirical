@@ -62,24 +62,49 @@ def evaluate(config: VisionRAGConfig, args):
     else:
         print(f"[EVAL] 正在初始化真实财报测试集...")
         
-        # 1. 初始化测试集 (这里采用内存映射与生成器模式，避免全量加载OOM)
-        # 注意：真实 ColPaliBackbone 需要 PIL Image，所以 transform 定义为空或 None
-        test_transform = None
-
-        # 1. 加载测试集 (仅用于提取 Query)
+        # 1. 初始化测试集
         from vision_rag.data.test_dataset import FinancialTestDataset
         from vision_rag.data.corpus_dataset import FinancialCorpusDataset
         
-        # 路径自适应逻辑
-        data_dir = "/root/autodl-tmp/project/data/vision_rag/page_images" if os.path.exists("/root/autodl-tmp/project/data/vision_rag/page_images") else "data/vision_rag/page_images"
+        project_root = Path(__file__).parent
         
-        # 优先寻找全量标注文件
-        potential_full_anno = "/root/autodl-tmp/project/data/vision_rag/visfinqa/test.json"
-        if not os.path.exists(potential_full_anno):
-            potential_full_anno = "data/vision_rag/visfinqa/test.json"
+        def resolve_path(p: str) -> str:
+            path = Path(p)
+            if path.is_absolute(): return str(path)
+            # Try resolve relative to project root
+            root_path = project_root / p
+            if root_path.exists(): return str(root_path)
+            return p
+            
+        data_dir = resolve_path(config.data.page_image_dir)
+        if not os.path.exists(data_dir):
+            raise FileNotFoundError(
+                f"页面图片目录不存在: {data_dir}\n"
+                f"请检查 config.data.page_image_dir 配置"
+            )
         
-        anno_file = potential_full_anno if os.path.exists(potential_full_anno) else "data/vision_rag/oracle_qa.json"
-        print(f"[EVAL] 查询源: {anno_file}")
+        anno_candidates = [
+            resolve_path(os.path.join(config.data.visfinqa_dir, "test.json")),
+            resolve_path("data/vision_rag/oracle_qa.json"),
+        ]
+        anno_file = None
+        for candidate in anno_candidates:
+            if os.path.exists(candidate):
+                anno_file = candidate
+                break
+        if anno_file is None:
+            raise FileNotFoundError(
+                f"未找到评测标注文件。已搜索:\n" +
+                "\n".join(f"  - {c}" for c in anno_candidates)
+            )
+        print(f"[EVAL] 页面图片: {data_dir}")
+        print(f"[EVAL] 标注文件: {anno_file}")
+        
+        # 数据完整性验证
+        image_count = len([f for f in os.listdir(data_dir) if f.lower().endswith('.jpg')])
+        if image_count == 0:
+            raise FileNotFoundError(f"页面图片目录为空: {data_dir}")
+        print(f"[EVAL] 发现 {image_count} 张页面图片")
 
         test_dataset = FinancialTestDataset(data_dir=data_dir, annotation_file=anno_file)
         

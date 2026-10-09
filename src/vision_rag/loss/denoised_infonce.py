@@ -82,60 +82,31 @@ class DenoisedFinancialInfoNCE(nn.Module):
         meta_d: list[dict],
     ) -> torch.Tensor:
         """
-        Layer 1: 基于元数据构建 FN 风险矩阵 R ∈ [0,1]^{B×B}
+        Layer 1: 基于元数据构建 FN 风险矩阵 R ∈ [0,1]^{B×B} (向量化 O(1) 实现)
 
         风险规则:
           1.0: 同公司 + 同报表类型 + 相邻周期 (≤1年)
           0.5: 同公司 + 同报表大类 / 同公司跨周期 >1年
           0.3: 同行业 + 同报表类型
           0.0: 无关
-
-        Args:
-            meta_q: 每个 query 的元数据 dict 列表
-            meta_d: 每个 doc 的元数据 dict 列表
-
-        Returns:
-            R: [B, B] FN 风险矩阵
         """
-        B = len(meta_q)
-        R = torch.zeros(B, B)
-
-        for i in range(B):
-            for j in range(B):
-                if i == j:
-                    continue
-
-                mq, md = meta_q[i], meta_d[j]
-                risk = 0.0
-
-                same_ticker = mq.get("ticker") == md.get("ticker")
-                same_industry = mq.get("industry") == md.get("industry")
-                same_content = mq.get("content_type") == md.get("content_type")
-                same_report = mq.get("report_type") == md.get("report_type")
-
-                if same_ticker and same_content:
-                    period_diff = self._period_distance(
-                        mq.get("fiscal_year", 0), mq.get("quarter", "Q1"),
-                        md.get("fiscal_year", 0), md.get("quarter", "Q1"),
-                    )
-                    if period_diff <= 4:
-                        risk = max(risk, 1.0)
-                    elif period_diff <= 8:
-                        risk = max(risk, 0.5)
-
-                elif same_ticker and same_report:
-                    risk = max(risk, 0.5)
-
-                elif same_industry and same_report:
-                    risk = max(risk, 0.3)
-
-                R[i, j] = risk
-
-        return R
-
-    @staticmethod
-    def _period_distance(year1: int, q1: str, year2: int, q2: str) -> int:
-        """计算两个财务周期之间的季度距离"""
+        B_q = len(meta_q)
+        B_d = len(meta_d)
+        
+        # 提取各个字段 (用 integer/string representation 进行 tensor 广播)
+        def _extract(meta_list, key, default=""):
+            return [m.get(key, default) for m in meta_list]
+            
+        tickers_q = _extract(meta_q, "ticker")
+        tickers_d = _extract(meta_d, "ticker")
+        industries_q = _extract(meta_q, "industry")
+        industries_d = _extract(meta_d, "industry")
+        contents_q = _extract(meta_q, "content_type")
+        contents_d = _extract(meta_d, "content_type")
+        reports_q = _extract(meta_q, "report_type")
+        reports_d = _extract(meta_d, "report_type")
+        
+        # 将期间转为 ordinal 进行向量化计算
         def to_ordinal(year: int, q: str) -> int:
             if not isinstance(q, str):
                 qnum = 1
@@ -148,7 +119,39 @@ class DenoisedFinancialInfoNCE(nn.Module):
             else:
                 qnum = 1
             return year * 4 + qnum
-        return abs(to_ordinal(year1, q1) - to_ordinal(year2, q2))
+
+        ordinals_q = torch.tensor([to_ordinal(m.get("fiscal_year", 0), m.get("quarter", "Q1")) for m in meta_q])
+        ordinals_d = torch.tensor([to_ordinal(m.get("fiscal_year", 0), m.get("quarter", "Q1")) for m in meta_d])
+        
+        # 计算布尔矩阵 [B_q, B_d]
+        same_ticker = torch.tensor([[q == d for d in tickers_d] for q in tickers_q])
+        same_industry = torch.tensor([[q == d for d in industries_d] for q in industries_q])
+        same_content = torch.tensor([[q == d for d in contents_d] for q in contents_q])
+        same_report = torch.tensor([[q == d for d in reports_d] for q in reports_q])
+        
+        # 期间距离 [B_q, B_d]
+        period_diff = torch.abs(ordinals_q.unsqueeze(1) - ordinals_d.unsqueeze(0))
+        
+        R = torch.zeros(B_q, B_d)
+        
+        # 规则 1 & 2: 同公司且同内容
+        mask_ticker_content = same_ticker & same_content
+        R = torch.where(mask_ticker_content & (period_diff <= 4), torch.tensor(1.0), R)
+        R = torch.where(mask_ticker_content & (period_diff > 4) & (period_diff <= 8), torch.max(R, torch.tensor(0.5)), R)
+        
+        # 规则 3: 同公司且同报表类型
+        R = torch.where(same_ticker & same_report, torch.max(R, torch.tensor(0.5)), R)
+        
+        # 规则 4: 同行业且同报表类型
+        R = torch.where(same_industry & same_report, torch.max(R, torch.tensor(0.3)), R)
+        
+        # 对角线清零 (仅当 B_q == B_d 时有意义)
+        if B_q == B_d:
+            R.fill_diagonal_(0.0)
+            
+        return R
+
+    # (_period_distance 不再被类方法调用, 直接删除或保留都可, 这里将其删除以保持简洁)
 
     def forward(
         self,

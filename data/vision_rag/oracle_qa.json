@@ -1,0 +1,836 @@
+[
+  {
+    "page_id": "AAPL_FY2022_Q1_10-Q_p017",
+    "pdf_path": "data/raw_pdfs/technology/AAPL/2022_Q1_10-Q.pdf",
+    "page_num": 17,
+    "query": "What was Apple's iPhone net sales for the three months ended December 25, 2021?",
+    "answer_text": "71,628",
+    "answer_context": "iPhone revenue in Q1 FY2022 (Three Months Ended December 25, 2021)",
+    "difficulty": "cross-column lookup",
+    "reverse_map": {
+      "status": "FOUND",
+      "answer_text": "71,628",
+      "num_search_results": 1,
+      "page_dims": {
+        "width": 595.0,
+        "height": 842.0
+      },
+      "bbox_pdf": [
+        381.75,
+        399.27,
+        410.56,
+        410.52
+      ],
+      "bbox_pixel": [
+        614.46,
+        485.58,
+        649.5,
+        499.26
+      ],
+      "fit_resize": {
+        "scale": 1.2162,
+        "pad_x": 150.19,
+        "pad_y": 0.0
+      },
+      "iopa_mask_shape": [
+        5330
+      ],
+      "num_activated_patches": 8,
+      "activated_patch_indices": [
+        2526,
+        2527,
+        2528,
+        2529,
+        2599,
+        2600,
+        2601,
+        2602
+      ],
+      "activated_patch_2d": [
+        [
+          34,
+          43
+        ],
+        [
+          34,
+          44
+        ],
+        [
+          34,
+          45
+        ],
+        [
+          34,
+          46
+        ],
+        [
+          35,
+          43
+        ],
+        [
+          35,
+          44
+        ],
+        [
+          35,
+          45
+        ],
+        [
+          35,
+          46
+        ]
+      ],
+      "iopa_values_at_activated": [
+        0.0347,
+        0.3158,
+        0.3158,
+        0.124,
+        0.0727,
+        0.6615,
+        0.6615,
+        0.2596
+      ]
+    }
+  },
+  {
+    "page_id": "AAPL_FY2022_Q1_10-Q_p017",
+    "pdf_path": "data/raw_pdfs/technology/AAPL/2022_Q1_10-Q.pdf",
+    "page_num": 17,
+    "query": "What was the percentage change in Services net sales between December 2020 and December 2021?",
+    "answer_text": "24",
+    "answer_context": "Services Change column: 24 %",
+    "difficulty": "cross-row cross-column",
+    "reverse_map": {
+      "status": "FOUND",
+      "answer_text": "24",
+      "num_search_results": 2,
+      "page_dims": {
+        "width": 595.0,
+        "height": 842.0
+      },
+      "bbox_pdf": [
+        394.5,
+        423.27,
+        405.31,
+        434.52
+      ],
+      "bbox_pixel": [
+        629.97,
+        514.77,
+        643.11,
+        528.45
+      ],
+      "fit_resize": {
+        "scale": 1.2162,
+        "pad_x": 150.19,
+        "pad_y": 0.0
+      },
+      "iopa_mask_shape": [
+        5330
+      ],
+      "num_activated_patches": 4,
+      "activated_patch_indices": [
+        2673,
+        2674,
+        2746,
+        2747
+      ],
+      "activated_patch_2d": [
+        [
+          36,
+          44
+        ],
+        [
+          36,
+          45
+        ],
+        [
+          37,
+          44
+        ],
+        [
+          37,
+          45
+        ]
+      ],
+      "iopa_values_at_activated": [
+        0.0005,
+        0.2163,
+        0.0018,
+        0.6989
+      ]
+    }
+  },
+  {
+    "page_id": "AAPL_FY2022_Q3_10-Q_p017",
+    "pdf_path": "data/raw_pdfs/technology/AAPL/2022_Q3_10-Q.pdf",
+    "page_num": 17,
+    "query": "What was Apple's total net sales for the nine months ended June 25, 2022?",
+    "answer_text": "304,182",
+    "answer_context": "Nine Months Ended Total net sales, June 25, 2022",
+    "difficulty": "disambiguate Three-Month vs Nine-Month columns",
+    "reverse_map": {
+      "status": "FOUND",
+      "answer_text": "304,182",
+      "num_search_results": 1,
+      "page_dims": {
+        "width": 595.0,
+        "height": 842.0
+      },
+      "bbox_pdf": [
+        410.25,
+        367.02,
+        444.31,
+        378.27
+      ],
+      "bbox_pixel": [
+        649.12,
+        446.36,
+        690.54,
+        460.04
+      ],
+      "fit_resize": {
+        "scale": 1.2162,
+        "pad_x": 150.19,
+        "pad_y": 0.0
+      },
+      "iopa_mask_shape": [
+        5330
+      ],
+      "num_activated_patches": 8,
+      "activated_patch_indices": [
+        2310,
+        2311,
+        2312,
+        2313,
+        2383,
+        2384,
+        2385,
+        2386
+      ],
+      "activated_patch_2d": [
+        [
+          31,
+          46
+        ],
+        [
+          31,
+          47
+        ],
+        [
+          31,
+          48
+        ],
+        [
+          31,
+          49
+        ],
+        [
+          32,
+          46
+        ],
+        [
+          32,
+          47
+        ],
+        [
+          32,
+          48
+        ],
+        [
+          32,
+          49
+        ]
+      ],
+      "iopa_values_at_activated": [
+        0.0744,
+        0.1173,
+        0.1173,
+        0.038,
+        0.5454,
+        0.86,
+        0.86,
+        0.2789
+      ]
+    }
+  },
+  {
+    "page_id": "AAPL_FY2022_Q3_10-Q_p017",
+    "pdf_path": "data/raw_pdfs/technology/AAPL/2022_Q3_10-Q.pdf",
+    "page_num": 17,
+    "query": "What was the percentage change in iPad net sales for the three months ended June 2022 vs June 2021?",
+    "answer_text": "(2)",
+    "answer_context": "iPad Three Months Change column: (2) %",
+    "difficulty": "negative percentage in parentheses",
+    "reverse_map": {
+      "status": "FOUND",
+      "answer_text": "(2)",
+      "num_search_results": 3,
+      "page_dims": {
+        "width": 595.0,
+        "height": 842.0
+      },
+      "bbox_pdf": [
+        366.75,
+        330.27,
+        378.32,
+        341.52
+      ],
+      "bbox_pixel": [
+        596.22,
+        401.66,
+        610.29,
+        415.35
+      ],
+      "fit_resize": {
+        "scale": 1.2162,
+        "pad_x": 150.19,
+        "pad_y": 0.0
+      },
+      "iopa_mask_shape": [
+        5330
+      ],
+      "num_activated_patches": 4,
+      "activated_patch_indices": [
+        2087,
+        2088,
+        2160,
+        2161
+      ],
+      "activated_patch_2d": [
+        [
+          28,
+          42
+        ],
+        [
+          28,
+          43
+        ],
+        [
+          29,
+          42
+        ],
+        [
+          29,
+          43
+        ]
+      ],
+      "iopa_values_at_activated": [
+        0.1279,
+        0.1833,
+        0.2757,
+        0.3952
+      ]
+    }
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p040",
+    "pdf_path": "data/raw_pdfs/technology/MSFT/2023_Q3_10-Q.pdf",
+    "page_num": 40,
+    "query": "What was Microsoft's operating income for Q3 FY2023 (three months ended March 31, 2023)?",
+    "answer_text": "22,352",
+    "answer_context": "Operating income row, 2023 column",
+    "difficulty": "exact row-column intersection",
+    "reverse_map": {
+      "status": "FOUND",
+      "answer_text": "22,352",
+      "num_search_results": 2,
+      "page_dims": {
+        "width": 595.0,
+        "height": 842.0
+      },
+      "bbox_pdf": [
+        237.75,
+        154.94,
+        267.68,
+        166.94
+      ],
+      "bbox_pixel": [
+        439.33,
+        188.43,
+        475.73,
+        203.03
+      ],
+      "fit_resize": {
+        "scale": 1.2162,
+        "pad_x": 150.19,
+        "pad_y": 0.0
+      },
+      "iopa_mask_shape": [
+        5330
+      ],
+      "num_activated_patches": 6,
+      "activated_patch_indices": [
+        981,
+        982,
+        983,
+        1054,
+        1055,
+        1056
+      ],
+      "activated_patch_2d": [
+        [
+          13,
+          31
+        ],
+        [
+          13,
+          32
+        ],
+        [
+          13,
+          33
+        ],
+        [
+          14,
+          31
+        ],
+        [
+          14,
+          32
+        ],
+        [
+          14,
+          33
+        ]
+      ],
+      "iopa_values_at_activated": [
+        0.3345,
+        0.5404,
+        0.5301,
+        0.3107,
+        0.502,
+        0.4924
+      ]
+    }
+  },
+  {
+    "page_id": "MSFT_FY2023_Q3_10-Q_p040",
+    "pdf_path": "data/raw_pdfs/technology/MSFT/2023_Q3_10-Q.pdf",
+    "page_num": 40,
+    "query": "What was Microsoft's diluted EPS (non-GAAP) for the nine months ended March 31, 2023?",
+    "answer_text": "7.12",
+    "answer_context": "Adjusted diluted EPS (non-GAAP), Nine Months 2023",
+    "difficulty": "GAAP vs non-GAAP disambiguation + column selection",
+    "reverse_map": {
+      "status": "FOUND",
+      "answer_text": "7.12",
+      "num_search_results": 1,
+      "page_dims": {
+        "width": 595.0,
+        "height": 842.0
+      },
+      "bbox_pdf": [
+        421.5,
+        247.19,
+        440.93,
+        259.19
+      ],
+      "bbox_pixel": [
+        662.8,
+        300.62,
+        686.43,
+        315.22
+      ],
+      "fit_resize": {
+        "scale": 1.2162,
+        "pad_x": 150.19,
+        "pad_y": 0.0
+      },
+      "iopa_mask_shape": [
+        5330
+      ],
+      "num_activated_patches": 6,
+      "activated_patch_indices": [
+        1581,
+        1582,
+        1583,
+        1654,
+        1655,
+        1656
+      ],
+      "activated_patch_2d": [
+        [
+          21,
+          47
+        ],
+        [
+          21,
+          48
+        ],
+        [
+          21,
+          49
+        ],
+        [
+          22,
+          47
+        ],
+        [
+          22,
+          48
+        ],
+        [
+          22,
+          49
+        ]
+      ],
+      "iopa_values_at_activated": [
+        0.3461,
+        0.5268,
+        0.0162,
+        0.3387,
+        0.5156,
+        0.0158
+      ]
+    }
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p035",
+    "pdf_path": "data/raw_pdfs/technology/MSFT/2022_Q2_10-Q.pdf",
+    "page_num": 35,
+    "query": "What was Microsoft's gross margin for the six months ended December 31, 2021?",
+    "answer_text": "66,439",
+    "answer_context": "Gross margin, Six Months 2021 column",
+    "difficulty": "three-month vs six-month column disambiguation",
+    "reverse_map": {
+      "status": "FOUND",
+      "answer_text": "66,439",
+      "num_search_results": 1,
+      "page_dims": {
+        "width": 595.0,
+        "height": 842.0
+      },
+      "bbox_pdf": [
+        417.0,
+        151.94,
+        446.93,
+        163.94
+      ],
+      "bbox_pixel": [
+        657.33,
+        184.79,
+        693.73,
+        199.38
+      ],
+      "fit_resize": {
+        "scale": 1.2162,
+        "pad_x": 150.19,
+        "pad_y": 0.0
+      },
+      "iopa_mask_shape": [
+        5330
+      ],
+      "num_activated_patches": 8,
+      "activated_patch_indices": [
+        996,
+        997,
+        998,
+        999,
+        1069,
+        1070,
+        1071,
+        1072
+      ],
+      "activated_patch_2d": [
+        [
+          13,
+          46
+        ],
+        [
+          13,
+          47
+        ],
+        [
+          13,
+          48
+        ],
+        [
+          13,
+          49
+        ],
+        [
+          14,
+          46
+        ],
+        [
+          14,
+          47
+        ],
+        [
+          14,
+          48
+        ],
+        [
+          14,
+          49
+        ]
+      ],
+      "iopa_values_at_activated": [
+        0.0383,
+        0.801,
+        0.801,
+        0.4421,
+        0.0116,
+        0.2414,
+        0.2414,
+        0.1332
+      ]
+    }
+  },
+  {
+    "page_id": "MSFT_FY2022_Q2_10-Q_p035",
+    "pdf_path": "data/raw_pdfs/technology/MSFT/2022_Q2_10-Q.pdf",
+    "page_num": 35,
+    "query": "What was the percentage change in Microsoft's net income for the three months ended December 31, 2021 compared to the same period in 2020?",
+    "answer_text": "21%",
+    "answer_context": "Net income Percentage Change column = 21%",
+    "difficulty": "percentage change column lookup",
+    "reverse_map": {
+      "status": "FOUND",
+      "answer_text": "21%",
+      "num_search_results": 4,
+      "page_dims": {
+        "width": 595.0,
+        "height": 842.0
+      },
+      "bbox_pdf": [
+        536.25,
+        141.44,
+        556.23,
+        153.44
+      ],
+      "bbox_pixel": [
+        802.36,
+        172.02,
+        826.65,
+        186.61
+      ],
+      "fit_resize": {
+        "scale": 1.2162,
+        "pad_x": 150.19,
+        "pad_y": 0.0
+      },
+      "iopa_mask_shape": [
+        5330
+      ],
+      "num_activated_patches": 6,
+      "activated_patch_indices": [
+        934,
+        935,
+        936,
+        1007,
+        1008,
+        1009
+      ],
+      "activated_patch_2d": [
+        [
+          12,
+          57
+        ],
+        [
+          12,
+          58
+        ],
+        [
+          12,
+          59
+        ],
+        [
+          13,
+          57
+        ],
+        [
+          13,
+          58
+        ],
+        [
+          13,
+          59
+        ]
+      ],
+      "iopa_values_at_activated": [
+        0.4912,
+        0.7131,
+        0.0334,
+        0.2268,
+        0.3293,
+        0.0154
+      ]
+    }
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p046",
+    "pdf_path": "data/raw_pdfs/technology/MSFT/2023_annual_10-K.pdf",
+    "page_num": 46,
+    "query": "What was Microsoft Intelligent Cloud segment's revenue in fiscal year 2023?",
+    "answer_text": "87,907",
+    "answer_context": "Intelligent Cloud Revenue, 2023 column",
+    "difficulty": "segment-level revenue identification",
+    "reverse_map": {
+      "status": "FOUND",
+      "answer_text": "87,907",
+      "num_search_results": 1,
+      "page_dims": {
+        "width": 595.0,
+        "height": 842.0
+      },
+      "bbox_pdf": [
+        367.5,
+        162.44,
+        397.43,
+        174.44
+      ],
+      "bbox_pixel": [
+        597.13,
+        197.56,
+        633.53,
+        212.15
+      ],
+      "fit_resize": {
+        "scale": 1.2162,
+        "pad_x": 150.19,
+        "pad_y": 0.0
+      },
+      "iopa_mask_shape": [
+        5330
+      ],
+      "num_activated_patches": 8,
+      "activated_patch_indices": [
+        1065,
+        1066,
+        1067,
+        1068,
+        1138,
+        1139,
+        1140,
+        1141
+      ],
+      "activated_patch_2d": [
+        [
+          14,
+          42
+        ],
+        [
+          14,
+          43
+        ],
+        [
+          14,
+          44
+        ],
+        [
+          14,
+          45
+        ],
+        [
+          15,
+          42
+        ],
+        [
+          15,
+          43
+        ],
+        [
+          15,
+          44
+        ],
+        [
+          15,
+          45
+        ]
+      ],
+      "iopa_values_at_activated": [
+        0.3092,
+        0.8889,
+        0.8889,
+        0.224,
+        0.0534,
+        0.1535,
+        0.1535,
+        0.0387
+      ]
+    }
+  },
+  {
+    "page_id": "MSFT_FY2023_annual_10-K_p046",
+    "pdf_path": "data/raw_pdfs/technology/MSFT/2023_annual_10-K.pdf",
+    "page_num": 46,
+    "query": "What was the percentage change in More Personal Computing operating income between FY2022 and FY2023?",
+    "answer_text": "(20)",
+    "answer_context": "More Personal Computing OI, Percentage Change = (20)%",
+    "difficulty": "negative percentage in parentheses + segment decomposition",
+    "reverse_map": {
+      "status": "FOUND",
+      "answer_text": "(20)",
+      "num_search_results": 1,
+      "page_dims": {
+        "width": 595.0,
+        "height": 842.0
+      },
+      "bbox_pdf": [
+        528.75,
+        265.19,
+        545.79,
+        277.19
+      ],
+      "bbox_pixel": [
+        793.24,
+        322.52,
+        813.96,
+        337.11
+      ],
+      "fit_resize": {
+        "scale": 1.2162,
+        "pad_x": 150.19,
+        "pad_y": 0.0
+      },
+      "iopa_mask_shape": [
+        5330
+      ],
+      "num_activated_patches": 6,
+      "activated_patch_indices": [
+        1736,
+        1737,
+        1738,
+        1809,
+        1810,
+        1811
+      ],
+      "activated_patch_2d": [
+        [
+          23,
+          56
+        ],
+        [
+          23,
+          57
+        ],
+        [
+          23,
+          58
+        ],
+        [
+          24,
+          56
+        ],
+        [
+          24,
+          57
+        ],
+        [
+          24,
+          58
+        ]
+      ],
+      "iopa_values_at_activated": [
+        0.3278,
+        0.9632,
+        0.1347,
+        0.027,
+        0.0792,
+        0.0111
+      ]
+    }
+  }
+]

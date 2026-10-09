@@ -83,9 +83,9 @@ class VisionRetriever(nn.Module):
 
     def encode_document(
         self,
-        images: torch.Tensor,  # [B, C, H, W]
+        images,  # [B, C, H, W] Tensor or list[PIL.Image]
     ) -> torch.Tensor:          # [B, M, D]
-        """编码文档页面图像"""
+        """编码文档页面图像（支持 Tensor 和 PIL Image 列表）"""
         return self.backbone.encode_image(images)
 
     def encode_query(
@@ -117,7 +117,7 @@ class VisionRetriever(nn.Module):
 
     def forward(
         self,
-        images: torch.Tensor,           # [B, C, H, W]
+        images,                          # [B, C, H, W] Tensor or list[PIL.Image]
         query_text: list[str],           # B 个 query 字符串
         soft_masks: torch.Tensor,        # [B, M]
         padding_mask: Optional[torch.Tensor] = None,  # [B, M]

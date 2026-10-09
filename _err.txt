@@ -1,0 +1,36 @@
+﻿python : Target Device: cuda
+所在位置 行:1 字符: 53
++ ... ONPATH='.'; python scripts/run_phase2_crucible.py 2> _err_crucible.tx ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Target Device: cuda:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Initializing VisionRetriever (Loading ColPali-v1.2 in bfloat16)...
+Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 16.
+NumExpr defaulting to 16 threads.
+FastPlaid is not installed.If you want to use it:Instal with `pip install --no-deps fast-plaid fastkmeans`
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|鈻堚枅鈻堚枅鈻?    | 1/2 [00:04<00:04,  4.09s/it]
+Loading checkpoint shards: 100%|鈻堚枅鈻堚枅鈻堚枅鈻堚枅鈻堚枅| 2/2 [00:06<00:00,  2.85s/it]
+Loading checkpoint shards: 100%|鈻堚枅鈻堚枅鈻堚枅鈻堚枅鈻堚枅| 2/2 [00:06<00:00,  3.04s/it]
+======================================================================
+馃棥锔?TASK 06: The Zero-Shot Baseline (Forward Pass Crucible)
+馃洝锔?TASK 07: The Gate Activation Profiling
+======================================================================
+Traceback (most recent call last):
+  File "D:\structure-aware-rag-study\scripts\run_phase2_crucible.py", line 241, in <module>
+    main()
+  File "D:\structure-aware-rag-study\scripts\run_phase2_crucible.py", line 233, in main
+    task_06_07_zero_shot_and_gate(retriever, oracle_data, device)
+  File "D:\structure-aware-rag-study\scripts\run_phase2_crucible.py", line 93, in task_06_07_zero_shot_and_gate
+    img = _load_image(img_path)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\structure-aware-rag-study\scripts\run_phase2_crucible.py", line 39, in _load_image
+    return Image.open(path).convert("RGB")
+           ^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\Lib\site-packages\PIL\Image.py", line 3431, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\structure-aware-rag-study\\data\\vision_rag\\images\\AAPL_FY2022_Q1_10-Q_p017.j
+pg'

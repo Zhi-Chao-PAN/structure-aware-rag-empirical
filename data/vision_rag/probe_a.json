@@ -1,0 +1,215 @@
+[
+  {
+    "probe_type": "A",
+    "description": "Cross-Period Twin",
+    "ticker": "AAPL",
+    "report_type": "10-Q",
+    "quarter": "Q1",
+    "page_1": {
+      "page_id": "AAPL_FY2023_Q1_10-Q_p004",
+      "fiscal_year": "2023",
+      "page_num": 4,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2023_Q1_10-Q_p004.jpg"
+    },
+    "page_2": {
+      "page_id": "AAPL_FY2024_Q1_10-Q_p004",
+      "fiscal_year": "2024",
+      "page_num": 4,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2024_Q1_10-Q_p004.jpg"
+    },
+    "ssim": 0.9923,
+    "text_overlap_keywords": [
+      "Net income"
+    ]
+  },
+  {
+    "probe_type": "A",
+    "description": "Cross-Period Twin",
+    "ticker": "AAPL",
+    "report_type": "10-Q",
+    "quarter": "Q1",
+    "page_1": {
+      "page_id": "AAPL_FY2022_Q1_10-Q_p009",
+      "fiscal_year": "2022",
+      "page_num": 9,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2022_Q1_10-Q_p009.jpg"
+    },
+    "page_2": {
+      "page_id": "AAPL_FY2023_Q1_10-Q_p009",
+      "fiscal_year": "2023",
+      "page_num": 9,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2023_Q1_10-Q_p009.jpg"
+    },
+    "ssim": 0.9921,
+    "text_overlap_keywords": [
+      "Revenue",
+      "Total net sales",
+      "Net sales",
+      "Products and Services"
+    ]
+  },
+  {
+    "probe_type": "A",
+    "description": "Cross-Period Twin",
+    "ticker": "AAPL",
+    "report_type": "10-Q",
+    "quarter": "Q1",
+    "page_1": {
+      "page_id": "AAPL_FY2022_Q1_10-Q_p004",
+      "fiscal_year": "2022",
+      "page_num": 4,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2022_Q1_10-Q_p004.jpg"
+    },
+    "page_2": {
+      "page_id": "AAPL_FY2023_Q1_10-Q_p004",
+      "fiscal_year": "2023",
+      "page_num": 4,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2023_Q1_10-Q_p004.jpg"
+    },
+    "ssim": 0.992,
+    "text_overlap_keywords": [
+      "Net income"
+    ]
+  },
+  {
+    "probe_type": "A",
+    "description": "Cross-Period Twin",
+    "ticker": "AAPL",
+    "report_type": "10-Q",
+    "quarter": "Q1",
+    "page_1": {
+      "page_id": "AAPL_FY2022_Q1_10-Q_p003",
+      "fiscal_year": "2022",
+      "page_num": 3,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2022_Q1_10-Q_p003.jpg"
+    },
+    "page_2": {
+      "page_id": "AAPL_FY2023_Q1_10-Q_p003",
+      "fiscal_year": "2023",
+      "page_num": 3,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2023_Q1_10-Q_p003.jpg"
+    },
+    "ssim": 0.991,
+    "text_overlap_keywords": [
+      "Total net sales",
+      "Net sales"
+    ]
+  },
+  {
+    "probe_type": "A",
+    "description": "Cross-Period Twin",
+    "ticker": "AAPL",
+    "report_type": "10-Q",
+    "quarter": "Q1",
+    "page_1": {
+      "page_id": "AAPL_FY2023_Q1_10-Q_p003",
+      "fiscal_year": "2023",
+      "page_num": 3,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2023_Q1_10-Q_p003.jpg"
+    },
+    "page_2": {
+      "page_id": "AAPL_FY2024_Q1_10-Q_p003",
+      "fiscal_year": "2024",
+      "page_num": 3,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2024_Q1_10-Q_p003.jpg"
+    },
+    "ssim": 0.9898,
+    "text_overlap_keywords": [
+      "Total net sales",
+      "Net sales"
+    ]
+  },
+  {
+    "probe_type": "A",
+    "description": "Cross-Period Twin",
+    "ticker": "AAPL",
+    "report_type": "10-Q",
+    "quarter": "Q3",
+    "page_1": {
+      "page_id": "AAPL_FY2022_Q3_10-Q_p003",
+      "fiscal_year": "2022",
+      "page_num": 3,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2022_Q3_10-Q_p003.jpg"
+    },
+    "page_2": {
+      "page_id": "AAPL_FY2024_Q3_10-Q_p003",
+      "fiscal_year": "2024",
+      "page_num": 3,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2024_Q3_10-Q_p003.jpg"
+    },
+    "ssim": 0.9828,
+    "text_overlap_keywords": [
+      "Total net sales",
+      "Net sales"
+    ]
+  },
+  {
+    "probe_type": "A",
+    "description": "Cross-Period Twin",
+    "ticker": "AAPL",
+    "report_type": "10-Q",
+    "quarter": "Q3",
+    "page_1": {
+      "page_id": "AAPL_FY2022_Q3_10-Q_p004",
+      "fiscal_year": "2022",
+      "page_num": 4,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2022_Q3_10-Q_p004.jpg"
+    },
+    "page_2": {
+      "page_id": "AAPL_FY2024_Q3_10-Q_p004",
+      "fiscal_year": "2024",
+      "page_num": 4,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2024_Q3_10-Q_p004.jpg"
+    },
+    "ssim": 0.9827,
+    "text_overlap_keywords": [
+      "Net income"
+    ]
+  },
+  {
+    "probe_type": "A",
+    "description": "Cross-Period Twin",
+    "ticker": "AAPL",
+    "report_type": "10-K",
+    "quarter": "annual",
+    "page_1": {
+      "page_id": "AAPL_FY2022_annual_10-K_p006",
+      "fiscal_year": "2022",
+      "page_num": 6,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2022_annual_10-K_p006.jpg"
+    },
+    "page_2": {
+      "page_id": "AAPL_FY2023_annual_10-K_p006",
+      "fiscal_year": "2023",
+      "page_num": 6,
+      "image_path": "data\\vision_rag\\page_images\\AAPL_FY2023_annual_10-K_p006.jpg"
+    },
+    "ssim": 0.8945,
+    "text_overlap_keywords": [
+      "Net sales"
+    ]
+  },
+  {
+    "probe_type": "A",
+    "description": "Cross-Period Twin",
+    "ticker": "MSFT",
+    "report_type": "10-Q",
+    "quarter": "Q2",
+    "page_1": {
+      "page_id": "MSFT_FY2022_Q2_10-Q_p003",
+      "fiscal_year": "2022",
+      "page_num": 3,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2022_Q2_10-Q_p003.jpg"
+    },
+    "page_2": {
+      "page_id": "MSFT_FY2023_Q2_10-Q_p003",
+      "fiscal_year": "2023",
+      "page_num": 3,
+      "image_path": "data\\vision_rag\\page_images\\MSFT_FY2023_Q2_10-Q_p003.jpg"
+    },
+    "ssim": 0.8525,
+    "text_overlap_keywords": [
+      "Net income"
+    ]
+  }
+]

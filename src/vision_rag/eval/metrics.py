@@ -284,7 +284,7 @@ def compute_metrics(model, test_loader, all_doc_embs, device, corpus_page_ids=No
                 # Vanilla MaxSim fallback
                 sim_matrix = torch.einsum('bqd, cnd -> bcqn', query_batch_emb, doc_chunk)
                 max_sim_over_n, _ = sim_matrix.max(dim=-1)
-                chunk_scores = max_sim_over_n.sum(dim=-1)
+                chunk_scores = max_sim_over_n.mean(dim=-1)
             
             batch_scores.append(chunk_scores.cpu())
             del doc_chunk
