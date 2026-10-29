@@ -1,0 +1,6 @@
+# Offline validation only; runtime/model dependencies stay in pyproject.toml.
+black==25.1.0
+flake8==7.1.2
+pandas==2.2.3
+pytest==8.3.5
+bandit==1.8.3
