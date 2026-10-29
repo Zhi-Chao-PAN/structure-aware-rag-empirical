@@ -143,7 +143,7 @@ These historical values are preserved from the [technical report](report/README.
 
 The original relative score change is +37.5%, calculated from 4/8 and 5.5/8 before rounding. It is a descriptive result for this small historical evaluation, not evidence of statistical significance or generalization.
 
-The report describes manual scoring with a ±1% numerical tolerance and partial credit. The bundled automatic scorer uses number/token matching and is not an implementation of that same rubric; its output requires manual review. Per-answer records and a reconciled scoring protocol are needed before claiming a reproducible result over all 30 questions. The charts above are historical report artifacts, not a fresh verification run.
+The report describes manual scoring with a ±1% numerical tolerance and partial credit. The bundled automatic scorer uses number/token matching and is not an implementation of that same rubric; its output requires manual review. It writes `heuristic_score` and `review_status=required`, preserving any existing manually adjudicated `score` column. Token overlap can still match negated or unit-incompatible answers and must not be reported as accuracy. Per-answer records and a reconciled scoring protocol are needed before claiming a reproducible result over all 30 questions. The charts above are historical report artifacts, not a fresh verification run.
 
 ### Key Insights
 1. **Parsing is one part of the pipeline**: Preserving table structure can help retrieval and interpretation, but it does not resolve every failure mode.
@@ -334,3 +334,19 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   <a href="https://github.com/Zhi-Chao-PAN/structure-aware-rag-empirical">View on GitHub</a> |
   <a href="report/README.md">Read the Technical Report</a>
 </p>
+
+## Offline validation
+
+CI runs formatting, fatal Python lint checks, the scoring regression tests and
+question-bank integrity checks on Python 3.10/3.12. Bandit reports medium/high
+severity, medium/high confidence findings as failures. These checks do not load
+models, run GPU benchmarks, prove answer accuracy, or deploy documentation.
+Placeholder performance jobs and generated pages with obsolete accuracy claims
+have been removed. Full model/environment validation remains a separate step.
+
+```bash
+pip install -r requirements-ci.txt
+python -m pytest tests -q
+python scripts/validate_dataset.py
+black --check .
+```

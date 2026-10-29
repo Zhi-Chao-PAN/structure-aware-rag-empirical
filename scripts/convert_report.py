@@ -1,9 +1,9 @@
-
 import markdown
 import os
 
+
 def convert_md_to_html(md_path, html_path):
-    with open(md_path, 'r', encoding='utf-8') as f:
+    with open(md_path, "r", encoding="utf-8") as f:
         text = f.read()
 
     # Premium Academic HTML Template
@@ -291,23 +291,25 @@ def convert_md_to_html(md_path, html_path):
 
     # Extensions for tables, fenced code, TOC, etc.
     html_content = markdown.markdown(
-        text,
-        extensions=['tables', 'fenced_code', 'toc', 'nl2br']
+        text, extensions=["tables", "fenced_code", "toc", "nl2br"]
     )
-    
-    final_html = html_template.replace('{{content}}', html_content)
 
-    with open(html_path, 'w', encoding='utf-8') as f:
+    final_html = html_template.replace("{{content}}", html_content)
+
+    with open(html_path, "w", encoding="utf-8") as f:
         f.write(final_html)
-    
+
     print(f"✓ Successfully generated: {html_path}")
     print(f"  Open in browser and use 'Print → Save as PDF' for best results.")
+
 
 if __name__ == "__main__":
     # Use relative paths for portability and professionalism
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     md_file = os.path.join(base_dir, "report", "README.md")
-    html_file = os.path.join(base_dir, "report", "Technical_Report_Structure_Aware_RAG.html")
+    html_file = os.path.join(
+        base_dir, "report", "Technical_Report_Structure_Aware_RAG.html"
+    )
 
     if os.path.exists(md_file):
         print(f"📖 Reading source from: {md_file}")
@@ -315,4 +317,5 @@ if __name__ == "__main__":
     else:
         print(f"❌ Error: Source file not found at {md_file}")
         import sys
+
         sys.exit(1)
